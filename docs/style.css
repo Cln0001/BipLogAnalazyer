@@ -155,3 +155,7 @@ table.role-table td:empty::after {
   content: "–";
   color: #55555f;
 }
+
+table.role-table tr:hover td {
+  background: #3a3a45;
+}
