@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-06-23T10:36:56+00:00",
+  "generated_at": "2026-06-23T13:05:18+00:00",
   "role_order": [
     "Tank",
     "Healer",
@@ -21,15 +21,15 @@
     "Explosives": "FFB3B3"
   },
   "consumable_categories": {
-    "Mana": "Potions",
+    "Ironshield Potion": "Potions",
     "Drums": "Explosives",
-    "Flame Cap": "Others",
-    "Living/Free Action Potion": "Potions",
-    "Demonic Rune/Dark Rune": "Others",
     "Sapper/Nades": "Explosives",
+    "Living/Free Action Potion": "Potions",
+    "Flame Cap": "Others",
+    "Demonic Rune/Dark Rune": "Others",
     "Destro": "Potions",
-    "Haste": "Potions",
-    "Ironshield Potion": "Potions"
+    "Mana": "Potions",
+    "Haste": "Potions"
   },
   "phase_order": [
     "2"
@@ -2111,7 +2111,7 @@
           {
             "name": "Blumjen",
             "class_name": "Shaman",
-            "role": "Caster DPS",
+            "role": "Healer",
             "logs_attended": 4,
             "consumables_avg": {
               "Living/Free Action Potion": 0.0,
@@ -2441,7 +2441,7 @@
           {
             "name": "Scottypimpen",
             "class_name": "Druid",
-            "role": "Healer",
+            "role": "Caster DPS",
             "logs_attended": 4,
             "consumables_avg": {
               "Destro": 3.5,

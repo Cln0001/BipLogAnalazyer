@@ -20,6 +20,7 @@ from log_analyzer.analyze import (
     ROLE_CASTER_DPS,
     ROLE_HEALER,
     ROLE_PHYSICAL_DPS,
+    ROLE_PRIORITY,
     ROLE_TANK,
     ROLE_UNKNOWN,
     PlayerSummary,
@@ -71,11 +72,17 @@ def _summary_from_logs(logs: dict[str, dict]) -> dict:
     """Same algorithm as excel_export._recompute_total_sheet: per player,
     average consumable count across the logs they attended (not a raw sum)
     plus a "Logs Attended" count, computed here in Python so the frontend
-    does zero aggregation math.
+    does zero aggregation math. A player's role on the Summary is whichever
+    role they played most often across their attended logs (ties broken by
+    ROLE_PRIORITY) — a single night spent off-role (e.g. a healer dps'ing
+    for one log) shouldn't flip their season-long Summary role; per-log
+    roles already reflect that night's actual spec correctly (see
+    analyze.py's classify_roles), this only changes how they're aggregated.
     """
     logs_attended: dict[str, int] = {}
     consumable_sums: dict[str, dict[str, int]] = {}
-    identity: dict[str, tuple[str, str]] = {}  # name -> (class_name, role), latest log wins
+    class_by_name: dict[str, str] = {}
+    role_counts: dict[str, dict[str, int]] = {}
 
     for sheet_name in sorted(logs, key=lambda k: logs[k]["log_date"]):
         for player in logs[sheet_name]["players"]:
@@ -84,20 +91,28 @@ def _summary_from_logs(logs: dict[str, dict]) -> dict:
             totals = consumable_sums.setdefault(name, {})
             for consumable, count in player["consumables"].items():
                 totals[consumable] = totals.get(consumable, 0) + count
-            identity[name] = (player["class_name"], player["role"])
+            class_by_name[name] = player["class_name"]
+            counts = role_counts.setdefault(name, {})
+            counts[player["role"]] = counts.get(player["role"], 0) + 1
+
+    def majority_role(name: str) -> str:
+        counts = role_counts[name]
+        best_count = max(counts.values())
+        tied = [role for role, count in counts.items() if count == best_count]
+        return next((role for role in ROLE_PRIORITY if role in tied), tied[0])
 
     players = [
         {
             "name": name,
-            "class_name": class_name,
-            "role": role,
+            "class_name": class_by_name[name],
+            "role": majority_role(name),
             "logs_attended": logs_attended[name],
             "consumables_avg": {
                 consumable: round(total / logs_attended[name], 1)
                 for consumable, total in consumable_sums.get(name, {}).items()
             },
         }
-        for name, (class_name, role) in identity.items()
+        for name in class_by_name
     ]
     players.sort(key=lambda p: p["name"])
 
