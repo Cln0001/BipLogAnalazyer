@@ -166,6 +166,12 @@ def majority_role_dicts(role_dicts: list[dict[int, str]]) -> dict[int, str]:
     Unlike `merge_role_dicts`, a single off-role fight (e.g. one emergency
     off-tank pull) no longer locks in that role for the whole log — it's
     just one vote among many.
+
+    ROLE_UNKNOWN votes are excluded from the count — many short/ambiguous
+    trash pulls can fail to bucket a player at all (table summary is
+    unreliable for very short fights), and those shouldn't be able to
+    outvote the fights that *did* classify the player into a real role.
+    Unknown is only the result when a player has no real-role votes at all.
     """
     counts: dict[int, dict[str, int]] = {}
     for roles in role_dicts:
@@ -175,8 +181,12 @@ def majority_role_dicts(role_dicts: list[dict[int, str]]) -> dict[int, str]:
 
     result: dict[int, str] = {}
     for player_id, role_counts in counts.items():
-        best_count = max(role_counts.values())
-        tied = [role for role, count in role_counts.items() if count == best_count]
+        real_counts = {role: count for role, count in role_counts.items() if role != ROLE_UNKNOWN}
+        if not real_counts:
+            result[player_id] = ROLE_UNKNOWN
+            continue
+        best_count = max(real_counts.values())
+        tied = [role for role, count in real_counts.items() if count == best_count]
         result[player_id] = next((role for role in ROLE_PRIORITY if role in tied), tied[0])
     return result
 
