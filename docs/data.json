@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-06-23T16:41:58+00:00",
+  "generated_at": "2026-06-23T17:56:32+00:00",
   "role_order": [
     "Tank",
     "Healer",
@@ -21,15 +21,15 @@
     "Explosives": "FFB3B3"
   },
   "consumable_categories": {
-    "Ironshield Potion": "Potions",
-    "Demonic Rune/Dark Rune": "Others",
-    "Mana": "Potions",
+    "Destro": "Potions",
     "Haste": "Potions",
     "Flame Cap": "Others",
     "Sapper/Nades": "Explosives",
-    "Living/Free Action Potion": "Potions",
+    "Ironshield Potion": "Potions",
+    "Mana": "Potions",
     "Drums": "Explosives",
-    "Destro": "Potions"
+    "Demonic Rune/Dark Rune": "Others",
+    "Living/Free Action Potion": "Potions"
   },
   "phase_order": [
     "2"
@@ -127,7 +127,7 @@
             {
               "name": "Ivorymage",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Mana": 20
               }
@@ -220,7 +220,7 @@
             {
               "name": "Xantyø",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Mana": 15,
                 "Destro": 7
@@ -274,7 +274,7 @@
             {
               "name": "Ðruidefix",
               "class_name": "Druid",
-              "role": "Unknown",
+              "role": "Healer",
               "consumables": {
                 "Mana": 15
               }
@@ -341,7 +341,7 @@
             {
               "name": "Ivorymage",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Mana": 12
               }
@@ -390,7 +390,7 @@
             {
               "name": "Meganshox",
               "class_name": "Shaman",
-              "role": "Unknown",
+              "role": "Healer",
               "consumables": {
                 "Drums": 10,
                 "Mana": 8
@@ -455,7 +455,7 @@
             {
               "name": "Xantyø",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Destro": 6,
                 "Mana": 9
@@ -592,7 +592,7 @@
             {
               "name": "Ivorymage",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Mana": 17
               }
@@ -819,7 +819,7 @@
             {
               "name": "Ivorymage",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Mana": 15
               }
@@ -855,7 +855,7 @@
             {
               "name": "Meganshox",
               "class_name": "Shaman",
-              "role": "Unknown",
+              "role": "Healer",
               "consumables": {
                 "Drums": 13,
                 "Mana": 19,
@@ -928,7 +928,7 @@
             {
               "name": "Xantyø",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Destro": 8,
                 "Mana": 7
@@ -1047,7 +1047,7 @@
             {
               "name": "Garu",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Mana": 14
               }
@@ -1065,7 +1065,7 @@
             {
               "name": "Ivorymage",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Mana": 15
               }
@@ -1110,7 +1110,7 @@
             {
               "name": "Meganshox",
               "class_name": "Shaman",
-              "role": "Unknown",
+              "role": "Healer",
               "consumables": {
                 "Drums": 14,
                 "Mana": 18,
@@ -1272,7 +1272,7 @@
             {
               "name": "Garu",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Sapper/Nades": 8,
                 "Mana": 17
@@ -1291,7 +1291,7 @@
             {
               "name": "Ivorymage",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Mana": 16
               }
@@ -1346,7 +1346,7 @@
             {
               "name": "Meganshox",
               "class_name": "Shaman",
-              "role": "Unknown",
+              "role": "Healer",
               "consumables": {
                 "Drums": 14,
                 "Mana": 14,
@@ -1412,7 +1412,7 @@
             {
               "name": "Xantyø",
               "class_name": "Mage",
-              "role": "Unknown",
+              "role": "Caster DPS",
               "consumables": {
                 "Destro": 2,
                 "Mana": 13
@@ -1599,7 +1599,7 @@
           {
             "name": "Garu",
             "class_name": "Mage",
-            "role": "Unknown",
+            "role": "Caster DPS",
             "logs_attended": 2,
             "consumables_avg": {
               "Mana": 15.5,
@@ -1620,7 +1620,7 @@
           {
             "name": "Ivorymage",
             "class_name": "Mage",
-            "role": "Unknown",
+            "role": "Caster DPS",
             "logs_attended": 6,
             "consumables_avg": {
               "Mana": 15.8
@@ -1697,7 +1697,7 @@
           {
             "name": "Meganshox",
             "class_name": "Shaman",
-            "role": "Unknown",
+            "role": "Healer",
             "logs_attended": 5,
             "consumables_avg": {
               "Drums": 13.2,
@@ -1803,7 +1803,7 @@
           {
             "name": "Xantyø",
             "class_name": "Mage",
-            "role": "Unknown",
+            "role": "Caster DPS",
             "logs_attended": 4,
             "consumables_avg": {
               "Mana": 11.0,
