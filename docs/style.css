@@ -1,0 +1,157 @@
+:root {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  --bg: #1b1b1f;
+  --panel: #25252b;
+  --border: #3a3a42;
+  --text: #e8e8ec;
+  --accent: #f0b429;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 1.5rem 2rem 1rem;
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+h1 {
+  margin: 0 0 0.75rem;
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+select {
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.4rem 0.6rem;
+  font-size: 0.95rem;
+}
+
+#meta {
+  color: #9a9aa4;
+  font-size: 0.85rem;
+}
+
+#report-link {
+  display: none;
+  color: var(--accent);
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+#report-link:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 1.5rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.75rem;
+}
+
+.loading {
+  color: #9a9aa4;
+}
+
+table.role-table {
+  border-collapse: collapse;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  width: max-content;
+  table-layout: auto;
+}
+
+table.role-table caption {
+  text-align: left;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  background: #32323a;
+  border-bottom: 1px solid var(--border);
+  color: var(--accent);
+}
+
+table.role-table th,
+table.role-table td {
+  padding: 0.3rem 0.5rem;
+  border-bottom: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  font-size: 0.85rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Width set inline by app.js (measured from the longest player name
+   across every table, so every player column is the same width and the
+   longest name still fits without truncation). */
+table.role-table th.player-col,
+table.role-table td.player-col {
+  white-space: nowrap;
+}
+
+table.role-table th[scope="row"] {
+  text-align: left;
+  font-weight: 500;
+  color: #c7c7d1;
+  background: #2a2a31;
+}
+
+/* Label column width is set inline by app.js (measured from the widest
+   label across every table on the page, so it's consistent everywhere)
+   rather than fixed here — a fixed px guess either truncates a long name
+   or wastes space on short ones. Targeted by class, not :first-child — a
+   category section header is also its row's first cell but spans every
+   column via colSpan, and would otherwise fight this width. */
+table.role-table th.name-col {
+  white-space: nowrap;
+}
+
+table.role-table tr:first-child th {
+  position: sticky;
+  top: 64px;
+  font-weight: 600;
+}
+
+table.role-table tr.total-row th,
+table.role-table tr.total-row td {
+  font-weight: 700;
+  border-top: 2px solid #6a6a76;
+}
+
+table.role-table tr.category-row th {
+  text-align: left;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--accent);
+  background: #32323a;
+  border-top: 1px solid var(--border);
+  white-space: normal;
+}
+
+table.role-table td:empty::after {
+  content: "–";
+  color: #55555f;
+}

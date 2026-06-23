@@ -1,0 +1,55 @@
+name: Parse guild raid logs
+
+on:
+  schedule:
+    # 22:00 UTC every Sunday — after the EU raid has ended (adjust if the
+    # raid time changes; cron is always UTC, not CET/CEST).
+    - cron: "0 22 * * 0"
+  workflow_dispatch:
+    inputs:
+      phase:
+        description: "Raid phase number (see data/phases.json)"
+        default: "2"
+
+permissions:
+  contents: write
+
+jobs:
+  parse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      # report.xlsx is gitignored (local-only) — cached across runs so a
+      # guild-batch run doesn't reprocess every past Sunday's report from
+      # scratch every week. The save key always includes run_id so a fresh
+      # cache entry is written every run; restore-keys falls back to the
+      # most recent previous run's cache.
+      - name: Restore report.xlsx cache
+        uses: actions/cache@v4
+        with:
+          path: report.xlsx
+          key: report-xlsx-${{ github.run_id }}
+          restore-keys: |
+            report-xlsx-
+
+      - name: Run guild batch parse
+        env:
+          WCL_API_KEY: ${{ secrets.WCL_API_KEY }}
+        run: |
+          python -m log_analyzer.cli --phase "${{ github.event.inputs.phase || '2' }}"
+
+      - name: Commit updated data.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data.json
+          git diff --cached --quiet || git commit -m "Update raid consumable data ($(date -u +%Y-%m-%d))"
+          git push

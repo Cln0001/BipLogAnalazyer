@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+*.xlsx
+Logs/
+.pytest_cache/
+*.egg-info/
+.idea/
+.claude/settings.local.json
+out*.txt

@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Destro",
+    "spell_ids": [28508],
+    "category": "potion",
+    "verified": true,
+    "note": "Destruction Potion."
+  },
+  {
+    "name": "Haste",
+    "spell_ids": [28507],
+    "category": "potion",
+    "verified": true,
+    "note": "Haste Potion."
+  },
+  {
+    "name": "Ironshield Potion",
+    "spell_ids": [28515],
+    "category": "potion",
+    "verified": true
+  },
+  {
+    "name": "Living/Free Action Potion",
+    "spell_ids": [6615],
+    "category": "potion",
+    "verified": true,
+    "note": "Only Free Action Potion (6615) confirmed so far. Living Action Potion has the same effect but its spell id wasn't seen in the report used to verify this list — add it here if you spot it used."
+  },
+  {
+    "name": "Mana",
+    "spell_ids": [28499, 41618, 41617],
+    "category": "potion",
+    "verified": true,
+    "note": "Super Mana Potion equivalents."
+  },
+  {
+    "name": "Demonic Rune/Dark Rune",
+    "spell_ids": [16666, 27869],
+    "category": "rune",
+    "verified": true
+  },
+  {
+    "name": "Flame Cap",
+    "spell_ids": [28714],
+    "category": "potion",
+    "verified": true
+  },
+  {
+    "name": "Drums",
+    "spell_ids": [35476],
+    "category": "explosive",
+    "verified": true,
+    "note": "Drums of Battle."
+  },
+  {
+    "name": "Sapper/Nades",
+    "spell_ids": [30486],
+    "category": "explosive",
+    "verified": true,
+    "note": "Super Sapper Charge."
+  },
+  {
+    "name": "Sapper/Nades",
+    "spell_ids": [13241],
+    "category": "explosive",
+    "verified": true,
+    "note": "Goblin Sapper Charge."
+  },
+  {
+    "name": "Sapper/Nades",
+    "spell_ids": [30216],
+    "category": "explosive",
+    "verified": true,
+    "note": "Fel Iron Bomb."
+  },
+  {
+    "name": "Sapper/Nades",
+    "spell_ids": [30217],
+    "category": "explosive",
+    "verified": true,
+    "note": "Adamantite Grenade."
+  },
+  {
+    "name": "Sapper/Nades",
+    "spell_ids": [37120],
+    "category": "explosive",
+    "verified": true,
+    "note": "Fragmentation Bomb."
+  },
+  {
+    "name": "Scrolls",
+    "spell_ids": [],
+    "category": "scroll",
+    "verified": false,
+    "note": "Placeholder bucket — Scroll of Strength/Agility/Intellect/Spirit/Stamina/Protection all merge here. Spell ids not yet confirmed against a live report; look them up via the WCL UI (?type=casts&ability=<spell_id>) and add one entry per scroll type with this same name."
+  },
+  {
+    "name": "Flask",
+    "spell_ids": [],
+    "category": "flask",
+    "verified": false,
+    "note": "Placeholder bucket — every Flask of ... type merges here by sharing this name. Spell ids not yet confirmed against a live report; look them up via the WCL UI (?type=casts&ability=<spell_id>) and add one entry per flask type with this same name."
+  },
+  {
+    "name": "Elixir",
+    "spell_ids": [],
+    "category": "elixir",
+    "verified": false,
+    "note": "Placeholder bucket — every Battle/Guardian Elixir merges here by sharing this name (Battle and Guardian are not split, same as the project's earlier buff-uptime approach). Spell ids not yet confirmed against a live report; look them up via the WCL UI and add one entry per elixir type with this same name."
+  },
+  {
+    "name": "Mana Emerald",
+    "spell_ids": [],
+    "category": "mana_item",
+    "verified": false,
+    "note": "Not used in the report this list was verified against, so its spell id is still unknown — add it once you see it cast in a report (check the event's ability.guid)."
+  },
+  {
+    "name": "Thistle Tea",
+    "spell_ids": [],
+    "category": "energy_item",
+    "verified": false,
+    "note": "Spell id unknown yet, same reason as Mana Emerald."
+  },
+  {
+    "name": "Heavy Netherweave Bandage",
+    "spell_ids": [],
+    "category": "bandage",
+    "verified": false,
+    "note": "Spell id unknown yet, same reason as Mana Emerald."
+  }
+]

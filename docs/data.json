@@ -1,0 +1,2665 @@
+{
+  "version": 2,
+  "generated_at": "2026-06-23T10:36:56+00:00",
+  "role_order": [
+    "Tank",
+    "Healer",
+    "Caster DPS",
+    "Physical DPS",
+    "Unknown"
+  ],
+  "category_order": [
+    "Potions",
+    "Others",
+    "Explosives",
+    "Buffs/Items",
+    "Other"
+  ],
+  "category_colors": {
+    "Potions": "DAEEF3",
+    "Others": "F7CDEE",
+    "Explosives": "FFB3B3"
+  },
+  "consumable_categories": {
+    "Mana": "Potions",
+    "Drums": "Explosives",
+    "Flame Cap": "Others",
+    "Living/Free Action Potion": "Potions",
+    "Demonic Rune/Dark Rune": "Others",
+    "Sapper/Nades": "Explosives",
+    "Destro": "Potions",
+    "Haste": "Potions",
+    "Ironshield Potion": "Potions"
+  },
+  "phase_order": [
+    "2"
+  ],
+  "phases": {
+    "2": {
+      "log_order": [
+        "2026-05-17 (MBcFhJPat9mC)",
+        "2026-05-24 (bptCBmqcygWM)",
+        "2026-05-31 (pYGAHBTj729r)",
+        "2026-06-07 (dkCrVTKcxnGq)",
+        "2026-06-14 (QgPvwcBdHX78)",
+        "2026-06-21 (BmT7rWYMqNLz)"
+      ],
+      "logs": {
+        "2026-05-17 (MBcFhJPat9mC)": {
+          "log_date": "2026-05-17",
+          "report_code": "MBcFhJPat9mCqvk2",
+          "players": [
+            {
+              "name": "Catcudi",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 2,
+                "Ironshield Potion": 0,
+                "Living/Free Action Potion": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lunyas",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 2,
+                "Ironshield Potion": 0,
+                "Living/Free Action Potion": 0,
+                "Sapper/Nades": 2,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Rptysass",
+              "class_name": "Paladin",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 9,
+                "Haste": 0,
+                "Ironshield Potion": 5,
+                "Living/Free Action Potion": 0,
+                "Sapper/Nades": 22,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ðruidefix",
+              "class_name": "Druid",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 15,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xery",
+              "class_name": "Paladin",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 15,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Dunkiee",
+              "class_name": "Priest",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Blumjen",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 14,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 5
+              }
+            },
+            {
+              "name": "Meganshox",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 17,
+                "Demonic Rune/Dark Rune": 6,
+                "Sapper/Nades": 0,
+                "Drums": 15
+              }
+            },
+            {
+              "name": "Ivorymage",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 20,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xantyø",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 7,
+                "Living/Free Action Potion": 0,
+                "Mana": 15,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Flect",
+              "class_name": "Priest",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 16,
+                "Living/Free Action Potion": 0,
+                "Mana": 3,
+                "Demonic Rune/Dark Rune": 7,
+                "Sapper/Nades": 5,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Leralol",
+              "class_name": "Shaman",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 9,
+                "Living/Free Action Potion": 0,
+                "Mana": 4,
+                "Demonic Rune/Dark Rune": 3,
+                "Sapper/Nades": 0,
+                "Drums": 15
+              }
+            },
+            {
+              "name": "Caloonwl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 19,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 5,
+                "Sapper/Nades": 35,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Nmfwl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Waffl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 17,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xaxina",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 19,
+                "Living/Free Action Potion": 0,
+                "Mana": 5,
+                "Demonic Rune/Dark Rune": 14,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Davejones",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 4,
+                "Living/Free Action Potion": 0,
+                "Mana": 10,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 4
+              }
+            },
+            {
+              "name": "Êtte",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 14,
+                "Living/Free Action Potion": 0,
+                "Mana": 6,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Sheppard",
+              "class_name": "Paladin",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 10,
+                "Living/Free Action Potion": 0,
+                "Mana": 1,
+                "Demonic Rune/Dark Rune": 3,
+                "Sapper/Nades": 9,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Nora",
+              "class_name": "Rogue",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 20,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 35,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Makíta",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 7,
+                "Drums": 18
+              }
+            },
+            {
+              "name": "Yaskorn",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 5,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 18
+              }
+            },
+            {
+              "name": "Chocochippo",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 8,
+                "Living/Free Action Potion": 1,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 22,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Goshakk",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 17,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 16,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Zamzuel",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 12,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 21,
+                "Drums": 0
+              }
+            }
+          ]
+        },
+        "2026-05-24 (bptCBmqcygWM)": {
+          "log_date": "2026-05-24",
+          "report_code": "bptCBmqcygWM2nGJ",
+          "players": [
+            {
+              "name": "Catcudi",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 1,
+                "Ironshield Potion": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lunyas",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 5,
+                "Ironshield Potion": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 1,
+                "Sapper/Nades": 4,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Rptysass",
+              "class_name": "Paladin",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 7,
+                "Haste": 0,
+                "Ironshield Potion": 8,
+                "Living/Free Action Potion": 0,
+                "Mana": 1,
+                "Sapper/Nades": 17,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ðruidefix",
+              "class_name": "Druid",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 10,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lucendra",
+              "class_name": "Paladin",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 16,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Dunkiee",
+              "class_name": "Priest",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Meganshox",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 8,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 10
+              }
+            },
+            {
+              "name": "Targâryen",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 16,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 11
+              }
+            },
+            {
+              "name": "Scottypimpen",
+              "class_name": "Druid",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 19,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ivorymage",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 12,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xantyø",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 6,
+                "Living/Free Action Potion": 0,
+                "Mana": 9,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Flect",
+              "class_name": "Priest",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 18,
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 8,
+                "Flame Cap": 0,
+                "Sapper/Nades": 6,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Leralol",
+              "class_name": "Shaman",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 8,
+                "Living/Free Action Potion": 0,
+                "Mana": 4,
+                "Demonic Rune/Dark Rune": 4,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 16
+              }
+            },
+            {
+              "name": "Waffl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 13,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xaxina",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 12,
+                "Living/Free Action Potion": 0,
+                "Mana": 1,
+                "Demonic Rune/Dark Rune": 13,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xubin",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 16,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Davejones",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 8,
+                "Living/Free Action Potion": 0,
+                "Mana": 12,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Êtte",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 12,
+                "Living/Free Action Potion": 0,
+                "Mana": 5,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 2,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Sheppard",
+              "class_name": "Paladin",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 11,
+                "Living/Free Action Potion": 0,
+                "Mana": 1,
+                "Demonic Rune/Dark Rune": 5,
+                "Flame Cap": 0,
+                "Sapper/Nades": 12,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Nora",
+              "class_name": "Rogue",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 7,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 14,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Makíta",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 11,
+                "Living/Free Action Potion": 0,
+                "Mana": 1,
+                "Demonic Rune/Dark Rune": 1,
+                "Flame Cap": 0,
+                "Sapper/Nades": 5,
+                "Drums": 11
+              }
+            },
+            {
+              "name": "Yaskorn",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 10,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 18
+              }
+            },
+            {
+              "name": "Chocochippo",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 8,
+                "Living/Free Action Potion": 1,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 35,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Goshakk",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 14,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 6,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Zamzuel",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 16,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 2,
+                "Sapper/Nades": 28,
+                "Drums": 0
+              }
+            }
+          ]
+        },
+        "2026-05-31 (pYGAHBTj729r)": {
+          "log_date": "2026-05-31",
+          "report_code": "pYGAHBTj729rCWvx",
+          "players": [
+            {
+              "name": "Lunyas",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 2,
+                "Ironshield Potion": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Sapper/Nades": 3,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Rptysass",
+              "class_name": "Paladin",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 5,
+                "Haste": 0,
+                "Ironshield Potion": 11,
+                "Living/Free Action Potion": 0,
+                "Mana": 4,
+                "Sapper/Nades": 24,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Chocochippo",
+              "class_name": "Warrior",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 6,
+                "Ironshield Potion": 0,
+                "Living/Free Action Potion": 1,
+                "Mana": 0,
+                "Sapper/Nades": 27,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ðruidefix",
+              "class_name": "Druid",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lucendra",
+              "class_name": "Paladin",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 12,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lanstarqt",
+              "class_name": "Priest",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 6,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Blumjen",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 16,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 12
+              }
+            },
+            {
+              "name": "Targâryen",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 14,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 10
+              }
+            },
+            {
+              "name": "Scottypimpen",
+              "class_name": "Druid",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 18,
+                "Demonic Rune/Dark Rune": 1,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ivorymage",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 17,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Flect",
+              "class_name": "Priest",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 18,
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 6,
+                "Sapper/Nades": 5,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Leralol",
+              "class_name": "Shaman",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 12,
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 3,
+                "Sapper/Nades": 0,
+                "Drums": 18
+              }
+            },
+            {
+              "name": "Caloonwl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 9,
+                "Sapper/Nades": 35,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Waffl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 16,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xaxina",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 17,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 9,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xubin",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 11,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Chovyh",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 8,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 16
+              }
+            },
+            {
+              "name": "Davejones",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 10,
+                "Living/Free Action Potion": 0,
+                "Mana": 13,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Êtte",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 16,
+                "Living/Free Action Potion": 0,
+                "Mana": 3,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 3,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Sheppard",
+              "class_name": "Paladin",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 7,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 1,
+                "Sapper/Nades": 10,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Nora",
+              "class_name": "Rogue",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 18,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Makíta",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 10,
+                "Living/Free Action Potion": 0,
+                "Mana": 1,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 8,
+                "Drums": 17
+              }
+            },
+            {
+              "name": "Yaskorn",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 9,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 26
+              }
+            },
+            {
+              "name": "Goshakk",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 16,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 32,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Zamzuel",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 27,
+                "Drums": 0
+              }
+            }
+          ]
+        },
+        "2026-06-07 (dkCrVTKcxnGq)": {
+          "log_date": "2026-06-07",
+          "report_code": "dkCrVTKcxnGqQZta",
+          "players": [
+            {
+              "name": "Makïta",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 4,
+                "Ironshield Potion": 1,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Sapper/Nades": 4,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Rptysass",
+              "class_name": "Paladin",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 6,
+                "Haste": 0,
+                "Ironshield Potion": 5,
+                "Living/Free Action Potion": 0,
+                "Mana": 1,
+                "Sapper/Nades": 22,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Goshakk",
+              "class_name": "Warrior",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 12,
+                "Ironshield Potion": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Sapper/Nades": 20,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ðruidefix",
+              "class_name": "Druid",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 10,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xery",
+              "class_name": "Paladin",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 9,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lanstarqt",
+              "class_name": "Priest",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 18,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Blumjen",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 14,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 5
+              }
+            },
+            {
+              "name": "Meganshox",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Living/Free Action Potion": 0,
+                "Mana": 19,
+                "Demonic Rune/Dark Rune": 4,
+                "Sapper/Nades": 0,
+                "Drums": 13
+              }
+            },
+            {
+              "name": "Scottypimpen",
+              "class_name": "Druid",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 16,
+                "Demonic Rune/Dark Rune": 1,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Shalaswyn",
+              "class_name": "Druid",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 12,
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 2,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ivorymage",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 15,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xantyø",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 8,
+                "Living/Free Action Potion": 0,
+                "Mana": 7,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Flect",
+              "class_name": "Priest",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 14,
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 4,
+                "Flame Cap": 0,
+                "Sapper/Nades": 5,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Caloonwl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 14,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 24,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Nmfwl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Waffl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 5,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xaxina",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 9,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Davejones",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 9,
+                "Living/Free Action Potion": 0,
+                "Mana": 11,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Êtte",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 10,
+                "Living/Free Action Potion": 0,
+                "Mana": 3,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 3,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lucendra",
+              "class_name": "Paladin",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 11,
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 2,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Nora",
+              "class_name": "Rogue",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Smect",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 6
+              }
+            },
+            {
+              "name": "Yaskorn",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 10,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 28
+              }
+            },
+            {
+              "name": "Chocochippo",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 8,
+                "Living/Free Action Potion": 1,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 24,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Zamzuel",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 14,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 1,
+                "Sapper/Nades": 31,
+                "Drums": 0
+              }
+            }
+          ]
+        },
+        "2026-06-14 (QgPvwcBdHX78)": {
+          "log_date": "2026-06-14",
+          "report_code": "QgPvwcBdHX78zaxJ",
+          "players": [
+            {
+              "name": "Lunyas",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 4,
+                "Ironshield Potion": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Sapper/Nades": 2,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Makïta",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 4,
+                "Ironshield Potion": 1,
+                "Living/Free Action Potion": 0,
+                "Mana": 1,
+                "Sapper/Nades": 5,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Rptysass",
+              "class_name": "Paladin",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 4,
+                "Haste": 0,
+                "Ironshield Potion": 4,
+                "Living/Free Action Potion": 2,
+                "Mana": 3,
+                "Sapper/Nades": 21,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Scottypimpen",
+              "class_name": "Druid",
+              "role": "Healer",
+              "consumables": {
+                "Destro": 14,
+                "Living/Free Action Potion": 0,
+                "Mana": 6,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ðruidefix",
+              "class_name": "Druid",
+              "role": "Healer",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 13,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lucendra",
+              "class_name": "Paladin",
+              "role": "Healer",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 16,
+                "Demonic Rune/Dark Rune": 3,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lanstarqt",
+              "class_name": "Priest",
+              "role": "Healer",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 17,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Meganshox",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 18,
+                "Demonic Rune/Dark Rune": 6,
+                "Sapper/Nades": 0,
+                "Drums": 14
+              }
+            },
+            {
+              "name": "Shalaswyn",
+              "class_name": "Druid",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 9,
+                "Living/Free Action Potion": 0,
+                "Mana": 5,
+                "Demonic Rune/Dark Rune": 9,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Garu",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 14,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ivorymage",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 15,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Flect",
+              "class_name": "Priest",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 20,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 5,
+                "Flame Cap": 0,
+                "Sapper/Nades": 2,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Blumjen",
+              "class_name": "Shaman",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Living/Free Action Potion": 0,
+                "Mana": 3,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 14
+              }
+            },
+            {
+              "name": "Caloonwl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 14,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 7,
+                "Flame Cap": 0,
+                "Sapper/Nades": 15,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Nmfwl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 10,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Waffl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xaxina",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 12,
+                "Living/Free Action Potion": 0,
+                "Mana": 3,
+                "Demonic Rune/Dark Rune": 11,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Davejones",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 9,
+                "Living/Free Action Potion": 0,
+                "Mana": 7,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 11
+              }
+            },
+            {
+              "name": "Forkoperator",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 9,
+                "Living/Free Action Potion": 0,
+                "Mana": 7,
+                "Demonic Rune/Dark Rune": 8,
+                "Flame Cap": 0,
+                "Sapper/Nades": 13,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Êtte",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 6,
+                "Living/Free Action Potion": 0,
+                "Mana": 5,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 5,
+                "Sapper/Nades": 2,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Sheppard",
+              "class_name": "Paladin",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 12,
+                "Living/Free Action Potion": 0,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 4,
+                "Flame Cap": 0,
+                "Sapper/Nades": 9,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Yaskorn",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 8,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 24
+              }
+            },
+            {
+              "name": "Yijo",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 13,
+                "Living/Free Action Potion": 0,
+                "Mana": 5,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 7,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Goshakk",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 13,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 7,
+                "Sapper/Nades": 13,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Zamzuel",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 15,
+                "Living/Free Action Potion": 0,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 16,
+                "Drums": 0
+              }
+            }
+          ]
+        },
+        "2026-06-21 (BmT7rWYMqNLz)": {
+          "log_date": "2026-06-21",
+          "report_code": "BmT7rWYMqNLzZQAc",
+          "players": [
+            {
+              "name": "Lunyas",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 9,
+                "Ironshield Potion": 0,
+                "Mana": 0,
+                "Sapper/Nades": 3,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Makïta",
+              "class_name": "Druid",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 0,
+                "Haste": 8,
+                "Ironshield Potion": 2,
+                "Mana": 0,
+                "Sapper/Nades": 8,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Rptysass",
+              "class_name": "Paladin",
+              "role": "Tank",
+              "consumables": {
+                "Destro": 7,
+                "Haste": 0,
+                "Ironshield Potion": 2,
+                "Mana": 2,
+                "Sapper/Nades": 24,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ðruidefix",
+              "class_name": "Druid",
+              "role": "Healer",
+              "consumables": {
+                "Mana": 12,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lucendra",
+              "class_name": "Paladin",
+              "role": "Healer",
+              "consumables": {
+                "Mana": 16,
+                "Demonic Rune/Dark Rune": 2,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Lanstarqt",
+              "class_name": "Priest",
+              "role": "Healer",
+              "consumables": {
+                "Mana": 19,
+                "Demonic Rune/Dark Rune": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Meganshox",
+              "class_name": "Shaman",
+              "role": "Healer",
+              "consumables": {
+                "Mana": 14,
+                "Demonic Rune/Dark Rune": 1,
+                "Sapper/Nades": 0,
+                "Drums": 14
+              }
+            },
+            {
+              "name": "Shalaswyn",
+              "class_name": "Druid",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 9,
+                "Mana": 5,
+                "Demonic Rune/Dark Rune": 2,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Garu",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Mana": 17,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 8,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Ivorymage",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 0,
+                "Mana": 16,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xantyø",
+              "class_name": "Mage",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 2,
+                "Mana": 13,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Flect",
+              "class_name": "Priest",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 16,
+                "Mana": 1,
+                "Demonic Rune/Dark Rune": 4,
+                "Flame Cap": 0,
+                "Sapper/Nades": 4,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Leralol",
+              "class_name": "Shaman",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 11,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 2,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 17
+              }
+            },
+            {
+              "name": "Caloonwl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 14,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 6,
+                "Flame Cap": 0,
+                "Sapper/Nades": 13,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Nmfwl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 16,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Waffl",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 15,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Xaxina",
+              "class_name": "Warlock",
+              "role": "Caster DPS",
+              "consumables": {
+                "Destro": 14,
+                "Mana": 2,
+                "Demonic Rune/Dark Rune": 9,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Davejones",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 12,
+                "Mana": 10,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 12
+              }
+            },
+            {
+              "name": "Êtte",
+              "class_name": "Hunter",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 13,
+                "Mana": 4,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 4,
+                "Sapper/Nades": 4,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Sheppard",
+              "class_name": "Paladin",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 9,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 3,
+                "Flame Cap": 0,
+                "Sapper/Nades": 7,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Nora",
+              "class_name": "Rogue",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 16,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 46,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Yaskorn",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 11,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 0,
+                "Drums": 24
+              }
+            },
+            {
+              "name": "Yijo",
+              "class_name": "Shaman",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 10,
+                "Mana": 3,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 7,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Goshakk",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 13,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 8,
+                "Sapper/Nades": 11,
+                "Drums": 0
+              }
+            },
+            {
+              "name": "Zamzuel",
+              "class_name": "Warrior",
+              "role": "Physical DPS",
+              "consumables": {
+                "Haste": 14,
+                "Mana": 0,
+                "Demonic Rune/Dark Rune": 0,
+                "Flame Cap": 0,
+                "Sapper/Nades": 19,
+                "Drums": 0
+              }
+            }
+          ]
+        }
+      },
+      "summary": {
+        "logs_attended": {
+          "Catcudi": 2,
+          "Lunyas": 5,
+          "Rptysass": 6,
+          "Ðruidefix": 6,
+          "Xery": 2,
+          "Dunkiee": 2,
+          "Blumjen": 4,
+          "Meganshox": 5,
+          "Ivorymage": 6,
+          "Xantyø": 4,
+          "Flect": 6,
+          "Leralol": 4,
+          "Caloonwl": 5,
+          "Nmfwl": 4,
+          "Waffl": 6,
+          "Xaxina": 6,
+          "Davejones": 6,
+          "Êtte": 6,
+          "Sheppard": 5,
+          "Nora": 5,
+          "Makíta": 3,
+          "Yaskorn": 6,
+          "Chocochippo": 4,
+          "Goshakk": 6,
+          "Zamzuel": 6,
+          "Lucendra": 5,
+          "Targâryen": 2,
+          "Scottypimpen": 4,
+          "Xubin": 2,
+          "Lanstarqt": 4,
+          "Chovyh": 1,
+          "Makïta": 3,
+          "Shalaswyn": 3,
+          "Smect": 1,
+          "Garu": 2,
+          "Forkoperator": 1,
+          "Yijo": 2
+        },
+        "players": [
+          {
+            "name": "Blumjen",
+            "class_name": "Shaman",
+            "role": "Caster DPS",
+            "logs_attended": 4,
+            "consumables_avg": {
+              "Living/Free Action Potion": 0.0,
+              "Mana": 11.8,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 9.0,
+              "Destro": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Caloonwl",
+            "class_name": "Warlock",
+            "role": "Caster DPS",
+            "logs_attended": 5,
+            "consumables_avg": {
+              "Destro": 15.2,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 5.4,
+              "Sapper/Nades": 24.4,
+              "Drums": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Catcudi",
+            "class_name": "Druid",
+            "role": "Tank",
+            "logs_attended": 2,
+            "consumables_avg": {
+              "Destro": 0.0,
+              "Haste": 1.5,
+              "Ironshield Potion": 0.0,
+              "Living/Free Action Potion": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0,
+              "Mana": 0.0
+            }
+          },
+          {
+            "name": "Chocochippo",
+            "class_name": "Warrior",
+            "role": "Physical DPS",
+            "logs_attended": 4,
+            "consumables_avg": {
+              "Haste": 7.5,
+              "Living/Free Action Potion": 1.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 27.0,
+              "Drums": 0.0,
+              "Flame Cap": 0.0,
+              "Destro": 0.0,
+              "Ironshield Potion": 0.0
+            }
+          },
+          {
+            "name": "Chovyh",
+            "class_name": "Hunter",
+            "role": "Physical DPS",
+            "logs_attended": 1,
+            "consumables_avg": {
+              "Haste": 0.0,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 8.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 16.0
+            }
+          },
+          {
+            "name": "Davejones",
+            "class_name": "Hunter",
+            "role": "Physical DPS",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Haste": 8.7,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 10.5,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 4.5,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Dunkiee",
+            "class_name": "Priest",
+            "role": "Healer",
+            "logs_attended": 2,
+            "consumables_avg": {
+              "Living/Free Action Potion": 0.0,
+              "Mana": 1.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0
+            }
+          },
+          {
+            "name": "Flect",
+            "class_name": "Priest",
+            "role": "Caster DPS",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Destro": 17.0,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 1.7,
+              "Demonic Rune/Dark Rune": 5.7,
+              "Sapper/Nades": 4.5,
+              "Drums": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Forkoperator",
+            "class_name": "Hunter",
+            "role": "Physical DPS",
+            "logs_attended": 1,
+            "consumables_avg": {
+              "Haste": 9.0,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 7.0,
+              "Demonic Rune/Dark Rune": 8.0,
+              "Flame Cap": 0.0,
+              "Sapper/Nades": 13.0,
+              "Drums": 0.0
+            }
+          },
+          {
+            "name": "Garu",
+            "class_name": "Mage",
+            "role": "Caster DPS",
+            "logs_attended": 2,
+            "consumables_avg": {
+              "Destro": 0.0,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 15.5,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Flame Cap": 0.0,
+              "Sapper/Nades": 4.0,
+              "Drums": 0.0
+            }
+          },
+          {
+            "name": "Goshakk",
+            "class_name": "Warrior",
+            "role": "Physical DPS",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Haste": 14.2,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 16.3,
+              "Drums": 0.0,
+              "Flame Cap": 2.5,
+              "Destro": 0.0,
+              "Ironshield Potion": 0.0
+            }
+          },
+          {
+            "name": "Ivorymage",
+            "class_name": "Mage",
+            "role": "Caster DPS",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Destro": 0.0,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 15.8,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Lanstarqt",
+            "class_name": "Priest",
+            "role": "Healer",
+            "logs_attended": 4,
+            "consumables_avg": {
+              "Living/Free Action Potion": 0.0,
+              "Mana": 15.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0,
+              "Destro": 0.0
+            }
+          },
+          {
+            "name": "Leralol",
+            "class_name": "Shaman",
+            "role": "Caster DPS",
+            "logs_attended": 4,
+            "consumables_avg": {
+              "Destro": 10.0,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 3.0,
+              "Demonic Rune/Dark Rune": 3.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 16.5,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Lucendra",
+            "class_name": "Paladin",
+            "role": "Healer",
+            "logs_attended": 5,
+            "consumables_avg": {
+              "Living/Free Action Potion": 0.0,
+              "Mana": 12.4,
+              "Demonic Rune/Dark Rune": 1.4,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0,
+              "Haste": 2.2,
+              "Flame Cap": 0.0,
+              "Destro": 0.0
+            }
+          },
+          {
+            "name": "Lunyas",
+            "class_name": "Druid",
+            "role": "Tank",
+            "logs_attended": 5,
+            "consumables_avg": {
+              "Destro": 0.0,
+              "Haste": 4.4,
+              "Ironshield Potion": 0.0,
+              "Living/Free Action Potion": 0.0,
+              "Sapper/Nades": 2.8,
+              "Drums": 0.0,
+              "Mana": 0.2
+            }
+          },
+          {
+            "name": "Makíta",
+            "class_name": "Shaman",
+            "role": "Physical DPS",
+            "logs_attended": 3,
+            "consumables_avg": {
+              "Haste": 12.0,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 1.3,
+              "Demonic Rune/Dark Rune": 0.3,
+              "Sapper/Nades": 6.7,
+              "Drums": 15.3,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Makïta",
+            "class_name": "Druid",
+            "role": "Tank",
+            "logs_attended": 3,
+            "consumables_avg": {
+              "Destro": 0.0,
+              "Haste": 5.3,
+              "Ironshield Potion": 1.3,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.3,
+              "Sapper/Nades": 5.7,
+              "Drums": 0.0
+            }
+          },
+          {
+            "name": "Meganshox",
+            "class_name": "Shaman",
+            "role": "Healer",
+            "logs_attended": 5,
+            "consumables_avg": {
+              "Living/Free Action Potion": 0.0,
+              "Mana": 15.2,
+              "Demonic Rune/Dark Rune": 3.4,
+              "Sapper/Nades": 0.0,
+              "Drums": 13.2,
+              "Destro": 0.0
+            }
+          },
+          {
+            "name": "Nmfwl",
+            "class_name": "Warlock",
+            "role": "Caster DPS",
+            "logs_attended": 4,
+            "consumables_avg": {
+              "Destro": 10.2,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Nora",
+            "class_name": "Rogue",
+            "role": "Physical DPS",
+            "logs_attended": 5,
+            "consumables_avg": {
+              "Haste": 14.6,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 22.6,
+              "Drums": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Rptysass",
+            "class_name": "Paladin",
+            "role": "Tank",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Destro": 6.3,
+              "Haste": 0.0,
+              "Ironshield Potion": 5.8,
+              "Living/Free Action Potion": 0.3,
+              "Sapper/Nades": 21.7,
+              "Drums": 0.0,
+              "Mana": 1.8
+            }
+          },
+          {
+            "name": "Scottypimpen",
+            "class_name": "Druid",
+            "role": "Healer",
+            "logs_attended": 4,
+            "consumables_avg": {
+              "Destro": 3.5,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 14.8,
+              "Demonic Rune/Dark Rune": 0.5,
+              "Flame Cap": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0
+            }
+          },
+          {
+            "name": "Shalaswyn",
+            "class_name": "Druid",
+            "role": "Caster DPS",
+            "logs_attended": 3,
+            "consumables_avg": {
+              "Destro": 10.0,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 4.0,
+              "Demonic Rune/Dark Rune": 4.3,
+              "Flame Cap": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0
+            }
+          },
+          {
+            "name": "Sheppard",
+            "class_name": "Paladin",
+            "role": "Physical DPS",
+            "logs_attended": 5,
+            "consumables_avg": {
+              "Haste": 9.8,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.8,
+              "Demonic Rune/Dark Rune": 3.2,
+              "Sapper/Nades": 9.4,
+              "Drums": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Smect",
+            "class_name": "Shaman",
+            "role": "Physical DPS",
+            "logs_attended": 1,
+            "consumables_avg": {
+              "Haste": 15.0,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Flame Cap": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 6.0
+            }
+          },
+          {
+            "name": "Targâryen",
+            "class_name": "Shaman",
+            "role": "Healer",
+            "logs_attended": 2,
+            "consumables_avg": {
+              "Living/Free Action Potion": 0.0,
+              "Mana": 15.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 10.5
+            }
+          },
+          {
+            "name": "Waffl",
+            "class_name": "Warlock",
+            "role": "Caster DPS",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Destro": 13.5,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Xantyø",
+            "class_name": "Mage",
+            "role": "Caster DPS",
+            "logs_attended": 4,
+            "consumables_avg": {
+              "Destro": 5.8,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 11.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Xaxina",
+            "class_name": "Warlock",
+            "role": "Caster DPS",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Destro": 14.8,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 1.8,
+              "Demonic Rune/Dark Rune": 10.8,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Xery",
+            "class_name": "Paladin",
+            "role": "Healer",
+            "logs_attended": 2,
+            "consumables_avg": {
+              "Living/Free Action Potion": 0.0,
+              "Mana": 12.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0
+            }
+          },
+          {
+            "name": "Xubin",
+            "class_name": "Warlock",
+            "role": "Caster DPS",
+            "logs_attended": 2,
+            "consumables_avg": {
+              "Destro": 13.5,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Flame Cap": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0
+            }
+          },
+          {
+            "name": "Yaskorn",
+            "class_name": "Shaman",
+            "role": "Physical DPS",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Haste": 8.8,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 23.0,
+              "Flame Cap": 0.0
+            }
+          },
+          {
+            "name": "Yijo",
+            "class_name": "Shaman",
+            "role": "Physical DPS",
+            "logs_attended": 2,
+            "consumables_avg": {
+              "Haste": 11.5,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 4.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Flame Cap": 0.0,
+              "Sapper/Nades": 7.0,
+              "Drums": 0.0
+            }
+          },
+          {
+            "name": "Zamzuel",
+            "class_name": "Warrior",
+            "role": "Physical DPS",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Haste": 14.3,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 0.0,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 23.7,
+              "Drums": 0.0,
+              "Flame Cap": 0.5
+            }
+          },
+          {
+            "name": "Êtte",
+            "class_name": "Hunter",
+            "role": "Physical DPS",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Haste": 11.8,
+              "Living/Free Action Potion": 0.0,
+              "Mana": 4.3,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 2.3,
+              "Drums": 0.0,
+              "Flame Cap": 1.5
+            }
+          },
+          {
+            "name": "Ðruidefix",
+            "class_name": "Druid",
+            "role": "Healer",
+            "logs_attended": 6,
+            "consumables_avg": {
+              "Living/Free Action Potion": 0.0,
+              "Mana": 10.3,
+              "Demonic Rune/Dark Rune": 0.0,
+              "Sapper/Nades": 0.0,
+              "Drums": 0.0,
+              "Destro": 0.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}
