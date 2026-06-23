@@ -27,6 +27,7 @@ const WCL_REPORT_BASE = "https://fresh.warcraftlogs.com/reports/";
 // excel_export.py's ROLE_RELEVANCE, this hides the row outright rather
 // than just blanking zero cells.
 const ROLE_EXCLUDE = {
+  "Healer": new Set(["Living/Free Action Potion"]),
   "Caster DPS": new Set(["Living/Free Action Potion"]),
   "Physical DPS": new Set(["Ironshield Potion"]),
 };
