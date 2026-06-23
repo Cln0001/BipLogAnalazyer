@@ -26,6 +26,12 @@ const WCL_REPORT_BASE = "https://fresh.warcraftlogs.com/reports/";
 // worth showing in that role's table at all (per guild request) — unlike
 // excel_export.py's ROLE_RELEVANCE, this hides the row outright rather
 // than just blanking zero cells.
+// Cosmetic only — mirrors data/phases.json's zone keywords as a short
+// display label. Add an entry here when a new phase entry is added there.
+const PHASE_LABELS = {
+  "2": "SSC/TK",
+};
+
 const ROLE_EXCLUDE = {
   "Healer": new Set(["Living/Free Action Potion"]),
   "Caster DPS": new Set(["Living/Free Action Potion"]),
@@ -238,7 +244,8 @@ function populatePhasePicker() {
   for (const phase of DATA.phase_order) {
     const option = document.createElement("option");
     option.value = phase;
-    option.textContent = `Phase ${phase}`;
+    const label = PHASE_LABELS[phase];
+    option.textContent = label ? `Phase ${phase} (${label})` : `Phase ${phase}`;
     picker.appendChild(option);
   }
 
