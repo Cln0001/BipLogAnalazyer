@@ -29,6 +29,11 @@ from log_analyzer.excel_export import _CATEGORY_FILL, _CATEGORY_ORDER, _category
 
 ROLE_ORDER = [ROLE_TANK, ROLE_HEALER, ROLE_CASTER_DPS, ROLE_PHYSICAL_DPS, ROLE_UNKNOWN]
 
+# Summary drops a player who hasn't attended any of the most recent N
+# logs — keeps an inactive/departed member's old numbers from cluttering
+# the current-roster view.
+RECENT_LOGS_WINDOW = 4
+
 
 def _skeleton() -> dict:
     return {
@@ -78,13 +83,23 @@ def _summary_from_logs(logs: dict[str, dict]) -> dict:
     for one log) shouldn't flip their season-long Summary role; per-log
     roles already reflect that night's actual spec correctly (see
     analyze.py's classify_roles), this only changes how they're aggregated.
+
+    Stats (logs_attended, consumables_avg) stay computed across the whole
+    season, but a player who hasn't shown up in any of the most recent
+    `RECENT_LOGS_WINDOW` logs is dropped from the Summary entirely — a
+    departed/inactive member's old numbers shouldn't keep cluttering the
+    current roster view.
     """
+    sorted_sheet_names = sorted(logs, key=lambda k: logs[k]["log_date"])
+    recent_sheet_names = sorted_sheet_names[-RECENT_LOGS_WINDOW:]
+    recent_names = {player["name"] for name in recent_sheet_names for player in logs[name]["players"]}
+
     logs_attended: dict[str, int] = {}
     consumable_sums: dict[str, dict[str, int]] = {}
     class_by_name: dict[str, str] = {}
     role_counts: dict[str, dict[str, int]] = {}
 
-    for sheet_name in sorted(logs, key=lambda k: logs[k]["log_date"]):
+    for sheet_name in sorted_sheet_names:
         for player in logs[sheet_name]["players"]:
             name = player["name"]
             logs_attended[name] = logs_attended.get(name, 0) + 1
@@ -113,6 +128,7 @@ def _summary_from_logs(logs: dict[str, dict]) -> dict:
             },
         }
         for name in class_by_name
+        if name in recent_names
     ]
     players.sort(key=lambda p: p["name"])
 

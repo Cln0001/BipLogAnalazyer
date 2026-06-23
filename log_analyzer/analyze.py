@@ -137,6 +137,50 @@ def merge_role_dicts(role_dicts: list[dict[int, str]]) -> dict[int, str]:
     return merged
 
 
+def matching_fights(fights_response: dict, zone_keywords: list[str] | None) -> list[dict]:
+    """Individual fight entries (not merged into windows) whose zone matches
+    `zone_keywords` — or every fight in the report when `zone_keywords` is
+    None (whole-report mode). Used to classify role *per encounter* rather
+    than per `phase_fight_windows` window, since a window can span several
+    fights and a single off-role pull within it (e.g. an emergency off-tank
+    on one trash pull) shouldn't dominate role classification for the whole
+    window the way `merge_role_dicts`' priority merge would.
+    """
+    fights = fights_response.get("fights", []) or []
+    if not zone_keywords:
+        return fights
+
+    zone_names_by_id = {zone.get("id"): zone.get("name", "") for zone in fights_response.get("zones", []) or []}
+    matched = []
+    for fight in fights:
+        zone_name = (fight.get("zoneName") or zone_names_by_id.get(fight.get("zoneID"), "")).lower()
+        if any(keyword in zone_name for keyword in zone_keywords):
+            matched.append(fight)
+    return matched
+
+
+def majority_role_dicts(role_dicts: list[dict[int, str]]) -> dict[int, str]:
+    """Combines several per-fight role classifications (one per
+    `matching_fights` entry) into one per player: whichever role they were
+    classified as most often across fights, ties broken by ROLE_PRIORITY.
+    Unlike `merge_role_dicts`, a single off-role fight (e.g. one emergency
+    off-tank pull) no longer locks in that role for the whole log — it's
+    just one vote among many.
+    """
+    counts: dict[int, dict[str, int]] = {}
+    for roles in role_dicts:
+        for player_id, role in roles.items():
+            player_counts = counts.setdefault(player_id, {})
+            player_counts[role] = player_counts.get(role, 0) + 1
+
+    result: dict[int, str] = {}
+    for player_id, role_counts in counts.items():
+        best_count = max(role_counts.values())
+        tied = [role for role, count in role_counts.items() if count == best_count]
+        result[player_id] = next((role for role in ROLE_PRIORITY if role in tied), tied[0])
+    return result
+
+
 def _entry_player_id(entry: dict, player_index: dict[int, PlayerInfo]) -> int | None:
     """Resolves a table/event entry to a known player id, trying the most
     likely field names ("id" / "sourceID") and falling back to a name match.

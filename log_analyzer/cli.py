@@ -18,8 +18,9 @@ from log_analyzer.analyze import (
     build_player_index,
     classify_roles,
     count_consumable_casts,
+    majority_role_dicts,
+    matching_fights,
     merge_player_summary,
-    merge_role_dicts,
     phase_fight_windows,
 )
 from log_analyzer.config import ConfigError, get_config
@@ -113,6 +114,14 @@ def _process_report(
     pull in other zones' data too), and players who never show up in any
     matching window's role buckets or consumable casts are dropped from
     the result entirely (they just weren't part of this phase's content).
+
+    Role is classified per individual fight (one /report/tables/summary
+    call per fight, via `matching_fights`) and combined by majority vote
+    (`majority_role_dicts`) — querying per merged window instead would let
+    a single off-role pull within that window (e.g. an emergency off-tank
+    on one trash pull) lock in that role for everyone caught in the same
+    window's priority merge. Consumable events are still queried per
+    merged window (cheaper, and not role-sensitive).
     """
     player_index = build_player_index(fights_response)
     if not player_index:
@@ -126,19 +135,20 @@ def _process_report(
         windows = [_report_time_window(fights_response)]
 
     cast_filter = _consumable_cast_filter(KNOWN_CONSUMABLE_IDS)
-    role_dicts = []
     consumable_counts: dict[int, dict[int, int]] = {}
     for start, end in windows:
-        summary_table = client.get_table("summary", code, start=start, end=end)
-        role_dicts.append(classify_roles(summary_table, player_index))
-
         events = client.get_events(code, start, end, filter=cast_filter)
         for player_id, per_ability in count_consumable_casts(events, KNOWN_CONSUMABLE_IDS, player_index).items():
             totals = consumable_counts.setdefault(player_id, {})
             for ability_id, count in per_ability.items():
                 totals[ability_id] = totals.get(ability_id, 0) + count
 
-    roles = merge_role_dicts(role_dicts)
+    role_dicts = []
+    for fight in matching_fights(fights_response, zone_keywords):
+        summary_table = client.get_table("summary", code, start=fight["start_time"], end=fight["end_time"])
+        role_dicts.append(classify_roles(summary_table, player_index))
+
+    roles = majority_role_dicts(role_dicts)
 
     if zone_keywords:
         relevant_ids = {pid for pid, role in roles.items() if role != ROLE_UNKNOWN} | set(consumable_counts)

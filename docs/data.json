@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-06-23T13:05:18+00:00",
+  "generated_at": "2026-06-23T13:58:35+00:00",
   "role_order": [
     "Tank",
     "Healer",
@@ -21,15 +21,15 @@
     "Explosives": "FFB3B3"
   },
   "consumable_categories": {
-    "Ironshield Potion": "Potions",
-    "Drums": "Explosives",
-    "Sapper/Nades": "Explosives",
-    "Living/Free Action Potion": "Potions",
-    "Flame Cap": "Others",
-    "Demonic Rune/Dark Rune": "Others",
-    "Destro": "Potions",
     "Mana": "Potions",
-    "Haste": "Potions"
+    "Ironshield Potion": "Potions",
+    "Flame Cap": "Others",
+    "Living/Free Action Potion": "Potions",
+    "Destro": "Potions",
+    "Sapper/Nades": "Explosives",
+    "Haste": "Potions",
+    "Demonic Rune/Dark Rune": "Others",
+    "Drums": "Explosives"
   },
   "phase_order": [
     "2"
@@ -2139,21 +2139,6 @@
             }
           },
           {
-            "name": "Catcudi",
-            "class_name": "Druid",
-            "role": "Tank",
-            "logs_attended": 2,
-            "consumables_avg": {
-              "Destro": 0.0,
-              "Haste": 1.5,
-              "Ironshield Potion": 0.0,
-              "Living/Free Action Potion": 0.0,
-              "Sapper/Nades": 0.0,
-              "Drums": 0.0,
-              "Mana": 0.0
-            }
-          },
-          {
             "name": "Chocochippo",
             "class_name": "Warrior",
             "role": "Physical DPS",
@@ -2197,19 +2182,6 @@
               "Sapper/Nades": 0.0,
               "Drums": 4.5,
               "Flame Cap": 0.0
-            }
-          },
-          {
-            "name": "Dunkiee",
-            "class_name": "Priest",
-            "role": "Healer",
-            "logs_attended": 2,
-            "consumables_avg": {
-              "Living/Free Action Potion": 0.0,
-              "Mana": 1.0,
-              "Demonic Rune/Dark Rune": 0.0,
-              "Sapper/Nades": 0.0,
-              "Drums": 0.0
             }
           },
           {
