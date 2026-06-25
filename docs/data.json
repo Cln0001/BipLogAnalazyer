@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "generated_at": "2026-06-25T07:25:24+00:00",
+  "generated_at": "2026-06-25T16:16:47+00:00",
   "role_order": [
     "Tank",
     "Healer",
@@ -21,16 +21,16 @@
     "Explosives": "FFB3B3"
   },
   "consumable_categories": {
-    "Flame Cap": "Others",
-    "Demonic Rune/Dark Rune": "Others",
-    "Mana": "Potions",
-    "Destro": "Potions",
+    "Living/Free Action Potion": "Potions",
     "Sapper/Nades": "Explosives",
     "Drums": "Explosives",
-    "Haste": "Potions",
-    "Scrolls": "Buffs/Items",
     "Ironshield Potion": "Potions",
-    "Living/Free Action Potion": "Potions"
+    "Mana": "Potions",
+    "Haste": "Potions",
+    "Destro": "Potions",
+    "Scrolls": "Buffs/Items",
+    "Demonic Rune/Dark Rune": "Others",
+    "Flame Cap": "Others"
   },
   "phase_order": [
     "2"
