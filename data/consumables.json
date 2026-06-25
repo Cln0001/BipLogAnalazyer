@@ -89,10 +89,38 @@
   },
   {
     "name": "Scrolls",
+    "spell_ids": [33082, 12179, 8120, 8119],
+    "category": "scroll",
+    "verified": true,
+    "note": "Scroll of Strength (rank VIII id 33082, older ranks 12179/8120/8119). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Strength\", icon spell_nature_strength.jpg)."
+  },
+  {
+    "name": "Scrolls",
+    "spell_ids": [33077, 8116, 8117, 12174],
+    "category": "scroll",
+    "verified": true,
+    "note": "Scroll of Agility (rank VIII id 33077, older ranks 8116/8117/12174). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Agility\", icon spell_holy_blessingofagility.jpg)."
+  },
+  {
+    "name": "Scrolls",
+    "spell_ids": [33080],
+    "category": "scroll",
+    "verified": true,
+    "note": "Scroll of Spirit (rank VIII id 33080). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Spirit\", icon spell_shadow_burningspirit.jpg)."
+  },
+  {
+    "name": "Scrolls",
+    "spell_ids": [33079],
+    "category": "scroll",
+    "verified": true,
+    "note": "Scroll of Protection (rank VIII id 33079). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Armor\", icon ability_warrior_defensivestance.jpg)."
+  },
+  {
+    "name": "Scrolls",
     "spell_ids": [],
     "category": "scroll",
     "verified": false,
-    "note": "Placeholder bucket — Scroll of Strength/Agility/Intellect/Spirit/Stamina/Protection all merge here. Spell ids not yet confirmed against a live report; look them up via the WCL UI (?type=casts&ability=<spell_id>) and add one entry per scroll type with this same name."
+    "note": "Scroll of Intellect/Stamina not seen in any reference report (BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, MBcFhJPat9mCqvk2) — spell ids unknown. Add via the WCL UI (?type=casts&ability=<spell_id>) or /report/tables/buffs once spotted live."
   },
   {
     "name": "Flask",

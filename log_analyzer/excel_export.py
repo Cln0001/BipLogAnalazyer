@@ -121,6 +121,7 @@ ROLE_RELEVANCE: dict[str, set[str]] = {
     "Haste": {ROLE_PHYSICAL_DPS},
     "Thistle Tea": {ROLE_PHYSICAL_DPS},
     "Ironshield Potion": {ROLE_TANK},
+    "Scrolls": {ROLE_TANK, ROLE_PHYSICAL_DPS},
 }
 
 
