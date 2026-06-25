@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
   "generated_at": "2026-06-25T16:16:47+00:00",
-=======
-  "generated_at": "2026-06-25T13:34:24+00:00",
->>>>>>> Stashed changes
   "role_order": [
     "Tank",
     "Healer",
@@ -25,26 +21,14 @@
     "Explosives": "FFB3B3"
   },
   "consumable_categories": {
-<<<<<<< Updated upstream
-    "Living/Free Action Potion": "Potions",
-=======
     "Well Fed Uptime %": "Buffs/Items",
     "Demonic Rune/Dark Rune": "Others",
     "Living/Free Action Potion": "Potions",
     "Haste": "Potions",
     "Scroll: Strength Uptime %": "Buffs/Items",
->>>>>>> Stashed changes
     "Sapper/Nades": "Explosives",
     "Drums": "Explosives",
     "Ironshield Potion": "Potions",
-<<<<<<< Updated upstream
-    "Mana": "Potions",
-    "Haste": "Potions",
-    "Destro": "Potions",
-    "Scrolls": "Buffs/Items",
-    "Demonic Rune/Dark Rune": "Others",
-    "Flame Cap": "Others"
-=======
     "Flame Cap": "Others",
     "Drums": "Explosives",
     "Mana": "Potions",
@@ -54,7 +38,6 @@
     "Elixir Uptime %": "Buffs/Items",
     "Destro": "Potions",
     "Scroll: Protection Uptime %": "Buffs/Items"
->>>>>>> Stashed changes
   },
   "phase_order": [
     "2"
@@ -162,16 +145,11 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 16,
-<<<<<<< Updated upstream
-                "Scrolls": 2,
-                "Haste": 17
-=======
                 "Haste": 17,
                 "Scroll: Strength Uptime %": 58.9,
                 "Scroll: Agility Uptime %": 58.9,
                 "Flask Uptime %": 71.5,
                 "Well Fed Uptime %": 86.5
->>>>>>> Stashed changes
               }
             },
             {
@@ -254,15 +232,11 @@
               "consumables": {
                 "Sapper/Nades": 35,
                 "Haste": 20,
-<<<<<<< Updated upstream
-                "Scrolls": 2
-=======
                 "Scroll: Strength Uptime %": 49.6,
                 "Scroll: Agility Uptime %": 29.5,
                 "Flask Uptime %": 71.5,
                 "Elixir Uptime %": 0.0,
                 "Well Fed Uptime %": 80.6
->>>>>>> Stashed changes
               }
             },
             {
@@ -310,13 +284,9 @@
               "consumables": {
                 "Mana": 15,
                 "Destro": 7,
-<<<<<<< Updated upstream
-                "Scrolls": 1
-=======
                 "Scroll: Spirit Uptime %": 42.4,
                 "Elixir Uptime %": 67.1,
                 "Well Fed Uptime %": 64.6
->>>>>>> Stashed changes
               }
             },
             {
@@ -348,14 +318,10 @@
               "consumables": {
                 "Drums": 18,
                 "Haste": 5,
-<<<<<<< Updated upstream
-                "Scrolls": 2
-=======
                 "Scroll: Strength Uptime %": 0.0,
                 "Scroll: Agility Uptime %": 0.0,
                 "Flask Uptime %": 71.5,
                 "Well Fed Uptime %": 71.7
->>>>>>> Stashed changes
               }
             },
             {
@@ -365,14 +331,10 @@
               "consumables": {
                 "Sapper/Nades": 21,
                 "Haste": 12,
-<<<<<<< Updated upstream
-                "Scrolls": 1
-=======
                 "Scroll: Strength Uptime %": 26.7,
                 "Scroll: Agility Uptime %": 17.2,
                 "Flask Uptime %": 70.8,
                 "Well Fed Uptime %": 60.9
->>>>>>> Stashed changes
               }
             },
             {
@@ -479,13 +441,9 @@
               "role": "Caster DPS",
               "consumables": {
                 "Mana": 12,
-<<<<<<< Updated upstream
-                "Scrolls": 1
-=======
                 "Scroll: Spirit Uptime %": 58.7,
                 "Elixir Uptime %": 130.8,
                 "Well Fed Uptime %": 67.0
->>>>>>> Stashed changes
               }
             },
             {
@@ -581,13 +539,9 @@
               "role": "Caster DPS",
               "consumables": {
                 "Mana": 19,
-<<<<<<< Updated upstream
-                "Scrolls": 1
-=======
                 "Scroll: Spirit Uptime %": 73.3,
                 "Flask Uptime %": 80.2,
                 "Well Fed Uptime %": 73.3
->>>>>>> Stashed changes
               }
             },
             {
@@ -633,13 +587,9 @@
               "consumables": {
                 "Destro": 6,
                 "Mana": 9,
-<<<<<<< Updated upstream
-                "Scrolls": 2
-=======
                 "Scroll: Spirit Uptime %": 80.2,
                 "Elixir Uptime %": 80.2,
                 "Well Fed Uptime %": 80.2
->>>>>>> Stashed changes
               }
             },
             {
@@ -685,16 +635,11 @@
               "consumables": {
                 "Sapper/Nades": 28,
                 "Haste": 16,
-<<<<<<< Updated upstream
-                "Scrolls": 2,
-                "Flame Cap": 2
-=======
                 "Flame Cap": 2,
                 "Scroll: Strength Uptime %": 72.4,
                 "Scroll: Agility Uptime %": 25.4,
                 "Flask Uptime %": 80.2,
                 "Well Fed Uptime %": 69.3
->>>>>>> Stashed changes
               }
             },
             {
@@ -807,14 +752,10 @@
               "consumables": {
                 "Sapper/Nades": 32,
                 "Haste": 16,
-<<<<<<< Updated upstream
-                "Scrolls": 1
-=======
                 "Scroll: Strength Uptime %": 72.4,
                 "Scroll: Agility Uptime %": 72.4,
                 "Flask Uptime %": 80.3,
                 "Well Fed Uptime %": 91.8
->>>>>>> Stashed changes
               }
             },
             {
@@ -910,13 +851,9 @@
                 "Destro": 5,
                 "Ironshield Potion": 11,
                 "Mana": 4,
-<<<<<<< Updated upstream
-                "Scrolls": 1
-=======
                 "Scroll: Protection Uptime %": 70.5,
                 "Elixir Uptime %": 70.5,
                 "Well Fed Uptime %": 70.5
->>>>>>> Stashed changes
               }
             },
             {
@@ -938,16 +875,11 @@
               "consumables": {
                 "Sapper/Nades": 10,
                 "Haste": 7,
-<<<<<<< Updated upstream
-                "Scrolls": 1,
-                "Demonic Rune/Dark Rune": 1
-=======
                 "Demonic Rune/Dark Rune": 1,
                 "Scroll: Strength Uptime %": 52.5,
                 "Scroll: Agility Uptime %": 52.5,
                 "Elixir Uptime %": 71.6,
                 "Well Fed Uptime %": 65.3
->>>>>>> Stashed changes
               }
             },
             {
@@ -1054,15 +986,10 @@
               "role": "Healer",
               "consumables": {
                 "Mana": 14,
-<<<<<<< Updated upstream
-                "Scrolls": 3,
-                "Drums": 5
-=======
                 "Drums": 5,
                 "Scroll: Spirit Uptime %": 72.0,
                 "Elixir Uptime %": 72.0,
                 "Well Fed Uptime %": 72.0
->>>>>>> Stashed changes
               }
             },
             {
@@ -1224,15 +1151,10 @@
                 "Sapper/Nades": 22,
                 "Destro": 6,
                 "Ironshield Potion": 5,
-<<<<<<< Updated upstream
-                "Scrolls": 2,
-                "Mana": 1
-=======
                 "Mana": 1,
                 "Scroll: Protection Uptime %": 67.7,
                 "Elixir Uptime %": 74.6,
                 "Well Fed Uptime %": 57.1
->>>>>>> Stashed changes
               }
             },
             {
@@ -1241,15 +1163,10 @@
               "role": "Caster DPS",
               "consumables": {
                 "Mana": 16,
-<<<<<<< Updated upstream
-                "Scrolls": 1,
-                "Demonic Rune/Dark Rune": 1
-=======
                 "Demonic Rune/Dark Rune": 1,
                 "Scroll: Spirit Uptime %": 77.6,
                 "Flask Uptime %": 78.3,
                 "Well Fed Uptime %": 72.7
->>>>>>> Stashed changes
               }
             },
             {
@@ -1329,14 +1246,10 @@
               "consumables": {
                 "Drums": 28,
                 "Haste": 10,
-<<<<<<< Updated upstream
-                "Scrolls": 3
-=======
                 "Scroll: Strength Uptime %": 75.5,
                 "Scroll: Agility Uptime %": 75.5,
                 "Flask Uptime %": 78.3,
                 "Well Fed Uptime %": 77.5
->>>>>>> Stashed changes
               }
             },
             {
@@ -1390,13 +1303,9 @@
               "consumables": {
                 "Drums": 14,
                 "Mana": 3,
-<<<<<<< Updated upstream
-                "Scrolls": 2
-=======
                 "Scroll: Spirit Uptime %": 58.2,
                 "Elixir Uptime %": 150.5,
                 "Well Fed Uptime %": 75.2
->>>>>>> Stashed changes
               }
             },
             {
@@ -1507,12 +1416,8 @@
               "consumables": {
                 "Mana": 16,
                 "Demonic Rune/Dark Rune": 3,
-<<<<<<< Updated upstream
-                "Scrolls": 1
-=======
                 "Elixir Uptime %": 73.3,
                 "Well Fed Uptime %": 92.3
->>>>>>> Stashed changes
               }
             },
             {
@@ -1585,13 +1490,9 @@
               "consumables": {
                 "Destro": 14,
                 "Mana": 6,
-<<<<<<< Updated upstream
-                "Scrolls": 1
-=======
                 "Scroll: Spirit Uptime %": 76.9,
                 "Flask Uptime %": 77.9,
                 "Well Fed Uptime %": 76.9
->>>>>>> Stashed changes
               }
             },
             {
@@ -1602,13 +1503,9 @@
                 "Destro": 9,
                 "Demonic Rune/Dark Rune": 9,
                 "Mana": 5,
-<<<<<<< Updated upstream
-                "Scrolls": 2
-=======
                 "Scroll: Spirit Uptime %": 100.0,
                 "Flask Uptime %": 87.4,
                 "Well Fed Uptime %": 91.5
->>>>>>> Stashed changes
               }
             },
             {
@@ -1670,16 +1567,11 @@
               "consumables": {
                 "Sapper/Nades": 7,
                 "Haste": 13,
-<<<<<<< Updated upstream
-                "Scrolls": 3,
-                "Mana": 5
-=======
                 "Mana": 5,
                 "Scroll: Strength Uptime %": 61.8,
                 "Scroll: Agility Uptime %": 61.8,
                 "Flask Uptime %": 77.9,
                 "Well Fed Uptime %": 66.5
->>>>>>> Stashed changes
               }
             },
             {
@@ -1902,13 +1794,9 @@
                 "Destro": 7,
                 "Ironshield Potion": 2,
                 "Mana": 2,
-<<<<<<< Updated upstream
-                "Scrolls": 2
-=======
                 "Scroll: Protection Uptime %": 96.7,
                 "Elixir Uptime %": 96.7,
                 "Well Fed Uptime %": 84.6
->>>>>>> Stashed changes
               }
             },
             {
@@ -1980,14 +1868,10 @@
               "consumables": {
                 "Drums": 24,
                 "Haste": 11,
-<<<<<<< Updated upstream
-                "Scrolls": 4
-=======
                 "Scroll: Strength Uptime %": 63.3,
                 "Scroll: Agility Uptime %": 63.3,
                 "Flask Uptime %": 79.7,
                 "Well Fed Uptime %": 78.2
->>>>>>> Stashed changes
               }
             },
             {
@@ -2094,13 +1978,9 @@
             "consumables_avg": {
               "Mana": 11.8,
               "Drums": 9.0,
-<<<<<<< Updated upstream
-              "Scrolls": 1.2
-=======
               "Elixir Uptime %": 99.6,
               "Well Fed Uptime %": 80.8,
               "Scroll: Spirit Uptime %": 56.5
->>>>>>> Stashed changes
             }
           },
           {
@@ -2152,14 +2032,10 @@
               "Haste": 8.7,
               "Mana": 10.5,
               "Drums": 4.5,
-<<<<<<< Updated upstream
-              "Scrolls": 0.3
-=======
               "Scroll: Agility Uptime %": 68.8,
               "Elixir Uptime %": 79.1,
               "Well Fed Uptime %": 79.1,
               "Scroll: Strength Uptime %": 27.4
->>>>>>> Stashed changes
             }
           },
           {
@@ -2230,13 +2106,9 @@
             "logs_attended": 6,
             "consumables_avg": {
               "Mana": 15.8,
-<<<<<<< Updated upstream
-              "Scrolls": 0.2
-=======
               "Scroll: Spirit Uptime %": 22.8,
               "Elixir Uptime %": 159.4,
               "Well Fed Uptime %": 76.3
->>>>>>> Stashed changes
             }
           },
           {
@@ -2272,12 +2144,8 @@
             "logs_attended": 5,
             "consumables_avg": {
               "Mana": 12.4,
-<<<<<<< Updated upstream
-              "Scrolls": 0.8,
-=======
               "Well Fed Uptime %": 87.7,
               "Elixir Uptime %": 19.1,
->>>>>>> Stashed changes
               "Haste": 2.2,
               "Demonic Rune/Dark Rune": 1.4,
               "Scroll: Strength Uptime %": 15.5,
@@ -2368,15 +2236,11 @@
             "consumables_avg": {
               "Sapper/Nades": 22.6,
               "Haste": 14.6,
-<<<<<<< Updated upstream
-              "Scrolls": 0.4
-=======
               "Scroll: Strength Uptime %": 9.9,
               "Scroll: Agility Uptime %": 15.0,
               "Flask Uptime %": 76.8,
               "Elixir Uptime %": 15.5,
               "Well Fed Uptime %": 81.4
->>>>>>> Stashed changes
             }
           },
           {
@@ -2403,13 +2267,9 @@
             "logs_attended": 4,
             "consumables_avg": {
               "Mana": 14.8,
-<<<<<<< Updated upstream
-              "Scrolls": 0.8,
-=======
               "Scroll: Spirit Uptime %": 76.9,
               "Flask Uptime %": 79.2,
               "Well Fed Uptime %": 75.7,
->>>>>>> Stashed changes
               "Demonic Rune/Dark Rune": 0.5,
               "Destro": 3.5
             }
@@ -2423,13 +2283,9 @@
               "Destro": 10.0,
               "Mana": 4.0,
               "Demonic Rune/Dark Rune": 4.3,
-<<<<<<< Updated upstream
-              "Scrolls": 0.7
-=======
               "Flask Uptime %": 81.8,
               "Well Fed Uptime %": 77.9,
               "Scroll: Spirit Uptime %": 39.1
->>>>>>> Stashed changes
             }
           },
           {
@@ -2442,15 +2298,11 @@
               "Sapper/Nades": 9.4,
               "Demonic Rune/Dark Rune": 3.2,
               "Mana": 0.8,
-<<<<<<< Updated upstream
-              "Scrolls": 0.2
-=======
               "Scroll: Strength Uptime %": 61.9,
               "Scroll: Agility Uptime %": 61.9,
               "Elixir Uptime %": 49.1,
               "Well Fed Uptime %": 76.4,
               "Flask Uptime %": 29.7
->>>>>>> Stashed changes
             }
           },
           {
@@ -2500,14 +2352,10 @@
             "consumables_avg": {
               "Mana": 11.0,
               "Destro": 5.8,
-<<<<<<< Updated upstream
-              "Scrolls": 0.8
-=======
               "Scroll: Spirit Uptime %": 48.4,
               "Elixir Uptime %": 60.5,
               "Well Fed Uptime %": 62.0,
               "Flask Uptime %": 23.6
->>>>>>> Stashed changes
             }
           },
           {
@@ -2553,15 +2401,11 @@
             "consumables_avg": {
               "Drums": 23.0,
               "Haste": 8.8,
-<<<<<<< Updated upstream
-              "Scrolls": 2.2
-=======
               "Scroll: Strength Uptime %": 57.9,
               "Scroll: Agility Uptime %": 59.1,
               "Flask Uptime %": 78.0,
               "Well Fed Uptime %": 73.3,
               "Elixir Uptime %": 0.0
->>>>>>> Stashed changes
             }
           },
           {
@@ -2572,16 +2416,11 @@
             "consumables_avg": {
               "Sapper/Nades": 7.0,
               "Haste": 11.5,
-<<<<<<< Updated upstream
-              "Scrolls": 1.5,
-              "Mana": 4.0
-=======
               "Mana": 4.0,
               "Scroll: Strength Uptime %": 67.6,
               "Scroll: Agility Uptime %": 67.6,
               "Flask Uptime %": 76.8,
               "Well Fed Uptime %": 68.2
->>>>>>> Stashed changes
             }
           },
           {
@@ -2592,17 +2431,12 @@
             "consumables_avg": {
               "Sapper/Nades": 23.7,
               "Haste": 14.3,
-<<<<<<< Updated upstream
-              "Scrolls": 0.5,
-              "Flame Cap": 0.5
-=======
               "Scroll: Strength Uptime %": 63.9,
               "Scroll: Agility Uptime %": 21.5,
               "Flask Uptime %": 77.1,
               "Well Fed Uptime %": 75.8,
               "Flame Cap": 0.5,
               "Elixir Uptime %": 3.4
->>>>>>> Stashed changes
             }
           },
           {
