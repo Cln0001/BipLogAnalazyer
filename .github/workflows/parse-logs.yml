@@ -27,19 +27,6 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # report.xlsx is gitignored (local-only) — cached across runs so a
-      # guild-batch run doesn't reprocess every past Sunday's report from
-      # scratch every week. The save key always includes run_id so a fresh
-      # cache entry is written every run; restore-keys falls back to the
-      # most recent previous run's cache.
-      - name: Restore report.xlsx cache
-        uses: actions/cache@v4
-        with:
-          path: report.xlsx
-          key: report-xlsx-${{ github.run_id }}
-          restore-keys: |
-            report-xlsx-
-
       - name: Run guild batch parse
         env:
           WCL_API_KEY: ${{ secrets.WCL_API_KEY }}

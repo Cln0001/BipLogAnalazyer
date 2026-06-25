@@ -1,6 +1,6 @@
 """CLI entrypoint: fetch a WCL report (or every report in a guild's phase),
-summarize per-player consumable usage, write to .xlsx. Prints only
-status/error lines — no console table (results live in the spreadsheet).
+summarize per-player consumable usage, write to the web UI's JSON data file.
+Prints only status/error lines — no console table (results live in the UI).
 """
 
 from __future__ import annotations
@@ -15,18 +15,19 @@ from pathlib import Path
 from log_analyzer.analyze import (
     ROLE_UNKNOWN,
     PlayerSummary,
+    aggregate_buff_uptime_ms,
     build_player_index,
     classify_roles,
     count_consumable_casts,
+    is_encounter_fight,
     majority_role_dicts,
     matching_fights,
     merge_player_summary,
     phase_fight_windows,
 )
 from log_analyzer.config import ConfigError, get_config
-from log_analyzer.consumables import CONSUMABLES, KNOWN_CONSUMABLE_IDS
-from log_analyzer.excel_export import sheet_already_exists, write_report
-from log_analyzer.json_export import write_report as write_json_report
+from log_analyzer.consumables import CONSUMABLES, KNOWN_CONSUMABLE_IDS, UPTIME_METRICS
+from log_analyzer.json_export import sheet_already_exists, write_report as write_json_report
 from log_analyzer.wcl_client import InvalidReportURLError, WCLAPIError, WCLClient, extract_report_code
 
 # Defaults so `--guild`/dates don't have to be retyped every run — override
@@ -103,6 +104,59 @@ def _log_sheet_name(log_date: str, code: str) -> str:
     return f"{log_date} ({code[:12]})"
 
 
+def _uptime_metrics(
+    client: WCLClient,
+    code: str,
+    windows: list[tuple[int, int]],
+    matched_fights: list[dict],
+    player_index: dict,
+    role_lookup: dict[int, str],
+) -> dict[int, dict[str, float]]:
+    """player_id -> {"<name> Uptime %": pct} for every consumables.json
+    `"metric": "uptime"` entry (see `UPTIME_METRICS`) — one `get_buff_uptime`
+    call per (window, spell id) pair (see that method's docstring: a single
+    ability id is required, several comma-joined ids silently don't filter).
+
+    Scoped to encounter time only (`is_encounter_fight` — boss kills/wipes,
+    not trash), both as the numerator (via `aggregate_buff_uptime_ms`'s
+    `intervals` — only the portion of each buff-uptime band that overlaps an
+    encounter pull counts) and the denominator (summed encounter durations).
+    The buff-uptime query itself still runs per `windows` (cheap — one call
+    per spell id per window, not per fight); only the ms actually counted
+    afterwards is restricted to encounter pulls. Without this scoping, the
+    wall-clock span of `windows` (which includes trash/travel/repair time
+    between pulls — confirmed live on report pYGAHBTj729rCWvx: roughly half
+    the block's total span) would dilute a buff that's reliably up during
+    every pull but deliberately let lapse in between (a common flask-saving
+    habit — pop it right before a pull, not during trash).
+
+    A metric with `roles` set (e.g. "Scroll: Agility" -> Physical DPS only)
+    is computed only for players already classified into one of those roles
+    — `role_lookup` must therefore be ready (roles classified) before this is
+    called. A metric with no `roles` (e.g. "Flask") applies to everyone.
+    Returns {} if there's no encounter time to divide by, rather than
+    dividing by zero.
+    """
+    encounter_intervals = [(f["start_time"], f["end_time"]) for f in matched_fights if is_encounter_fight(f)]
+    total_encounter_ms = sum(end - start for start, end in encounter_intervals)
+    if total_encounter_ms <= 0:
+        return {}
+
+    metrics: dict[int, dict[str, float]] = {}
+    for metric in UPTIME_METRICS:
+        auras_lists = [
+            client.get_buff_uptime(code, start, end, spell_id)
+            for start, end in windows
+            for spell_id in metric.spell_ids
+        ]
+        uptime_ms = aggregate_buff_uptime_ms(auras_lists, player_index, encounter_intervals)
+        for player_id, ms in uptime_ms.items():
+            if metric.roles is not None and role_lookup.get(player_id) not in metric.roles:
+                continue
+            metrics.setdefault(player_id, {})[f"{metric.name} Uptime %"] = round(ms / total_encounter_ms * 100, 1)
+    return metrics
+
+
 def _process_report(
     client: WCLClient, code: str, fights_response: dict, zone_keywords: list[str] | None = None
 ) -> list[PlayerSummary]:
@@ -143,24 +197,28 @@ def _process_report(
             for ability_id, count in per_ability.items():
                 totals[ability_id] = totals.get(ability_id, 0) + count
 
+    matched_fights = matching_fights(fights_response, zone_keywords)
     role_dicts = []
-    for fight in matching_fights(fights_response, zone_keywords):
+    for fight in matched_fights:
         summary_table = client.get_table("summary", code, start=fight["start_time"], end=fight["end_time"])
         role_dicts.append(classify_roles(summary_table, player_index))
 
     roles = majority_role_dicts(role_dicts)
 
+    # Role-scoped uptime metrics (e.g. "Scroll: Agility" -> Physical DPS
+    # only) need final roles first, so this runs after majority_role_dicts.
+    extra_metrics = _uptime_metrics(client, code, windows, matched_fights, player_index, roles)
+
     if zone_keywords:
         relevant_ids = {pid for pid, role in roles.items() if role != ROLE_UNKNOWN} | set(consumable_counts)
         player_index = {pid: info for pid, info in player_index.items() if pid in relevant_ids}
 
-    return merge_player_summary(player_index, consumable_counts, CONSUMABLES, roles)
+    return merge_player_summary(player_index, consumable_counts, CONSUMABLES, roles, extra_metrics)
 
 
 def run(
     report_url: str,
     api_key_override: str | None,
-    output_path: str | None,
     zone_keywords: list[str] | None = None,
     json_output_path: str | None = None,
     phase_label: str | None = None,
@@ -188,12 +246,9 @@ def run(
         print(f"WCL API error: {exc}", file=sys.stderr)
         return 3
 
-    path = output_path or "report.xlsx"
     json_path = json_output_path or "docs/data.json"
     log_date = _log_date(fights_response)
     sheet_name = _log_sheet_name(log_date, code)
-    write_report(summaries, path, sheet_name)
-    print(f"Wrote {path}")
     write_json_report(
         summaries, json_path, sheet_name, log_date=log_date, report_code=code, phase=phase_label or "unphased"
     )
@@ -226,7 +281,6 @@ def run_guild(
     date_from: str | None,
     date_to: str | None,
     api_key_override: str | None,
-    output_path: str | None,
     json_output_path: str | None = None,
     phase_label: str | None = None,
 ) -> int:
@@ -286,8 +340,8 @@ def run_guild(
         print("No reports matched the day/zone filter.", file=sys.stderr)
         return 1
 
-    path = output_path or "report.xlsx"
     json_path = json_output_path or "docs/data.json"
+    phase = phase_label or "unphased"
     for log_date, candidates in sorted(fights_by_date.items()):
         # Only one report counts per calendar date — several reports on the
         # same date means several guild members independently logged the
@@ -300,8 +354,8 @@ def run_guild(
             print(f"  {log_date}: kept {best_code}, dropped duplicate log(s) {', '.join(dropped)}")
 
         sheet_name = _log_sheet_name(log_date, best_code)
-        if sheet_already_exists(path, sheet_name):
-            print(f"  {log_date}: sheet for {best_code} already exists, skipping re-parse.")
+        if sheet_already_exists(json_path, sheet_name, phase):
+            print(f"  {log_date}: entry for {best_code} already exists, skipping re-parse.")
             continue
 
         try:
@@ -311,17 +365,15 @@ def run_guild(
             print(f"  skipping {best_code} — {exc}", file=sys.stderr)
             continue
 
-        write_report(summaries, path, sheet_name)
         write_json_report(
             summaries,
             json_path,
             sheet_name,
             log_date=log_date,
             report_code=best_code,
-            phase=phase_label or "unphased",
+            phase=phase,
         )
 
-    print(f"Wrote {path}")
     print(f"Wrote {json_path}")
     return 0
 
@@ -358,7 +410,7 @@ def _main(argv: list[str] | None) -> int:
 
     parser = argparse.ArgumentParser(
         description="Summarize Warcraft Logs (fresh.warcraftlogs.com) TBC reports "
-        "into per-player consumable usage, exported to Excel."
+        "into per-player consumable usage, exported to the web UI's JSON data file."
     )
     parser.add_argument("report_url", nargs="?", default=None, help="Full WCL report URL or bare report code")
     parser.add_argument(
@@ -383,12 +435,6 @@ def _main(argv: list[str] | None) -> int:
     parser.add_argument("--from", dest="date_from", default=None, help="YYYY-MM-DD, optionally further narrows the guild report list by date")
     parser.add_argument("--to", dest="date_to", default=None, help="YYYY-MM-DD, optionally further narrows the guild report list by date")
     parser.add_argument("--api-key", dest="api_key", default=None, help="Override WCL_API_KEY")
-    parser.add_argument(
-        "--output-path",
-        dest="output_path",
-        default=None,
-        help="Output .xlsx path (default: report.xlsx — re-running adds/updates a sheet in the same file)",
-    )
     parser.add_argument(
         "--json-output-path",
         dest="json_output_path",
@@ -422,7 +468,7 @@ def _main(argv: list[str] | None) -> int:
     phase_label = args.phase or (args.zones if args.zones else None)
 
     if args.report_url:
-        return run(args.report_url, args.api_key, args.output_path, zones, args.json_output_path, phase_label)
+        return run(args.report_url, args.api_key, zones, args.json_output_path, phase_label)
     else:
         guild_name, server_name, server_region = args.guild or DEFAULT_GUILD
         return run_guild(
@@ -433,7 +479,6 @@ def _main(argv: list[str] | None) -> int:
             args.date_from,
             args.date_to,
             args.api_key,
-            args.output_path,
             args.json_output_path,
             phase_label,
         )

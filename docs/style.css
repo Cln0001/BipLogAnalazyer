@@ -139,6 +139,7 @@ table.role-table tr.total-row th,
 table.role-table tr.total-row td {
   font-weight: 700;
   border-top: 2px solid #6a6a76;
+  padding-bottom: 0.7rem;
 }
 
 table.role-table tr.category-row th {
@@ -147,7 +148,8 @@ table.role-table tr.category-row th {
   font-weight: 600;
   color: var(--accent);
   background: #32323a;
-  border-top: 1px solid var(--border);
+  border-top: 3px solid var(--border);
+  padding-top: 0.6rem;
   white-space: normal;
 }
 

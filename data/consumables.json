@@ -88,53 +88,73 @@
     "note": "Fragmentation Bomb."
   },
   {
-    "name": "Scrolls",
+    "name": "Scroll: Strength",
     "spell_ids": [33082, 12179, 8120, 8119],
     "category": "scroll",
+    "metric": "uptime",
+    "roles": ["Tank", "Physical DPS"],
     "verified": true,
-    "note": "Scroll of Strength (rank VIII id 33082, older ranks 12179/8120/8119). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Strength\", icon spell_nature_strength.jpg)."
+    "note": "Scroll of Strength (rank VIII id 33082, older ranks 12179/8120/8119). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Strength\", icon spell_nature_strength.jpg). Uptime-only (no cast count) — tracked for Tank/Physical DPS only."
   },
   {
-    "name": "Scrolls",
+    "name": "Scroll: Agility",
     "spell_ids": [33077, 8116, 8117, 12174],
     "category": "scroll",
+    "metric": "uptime",
+    "roles": ["Physical DPS"],
     "verified": true,
-    "note": "Scroll of Agility (rank VIII id 33077, older ranks 8116/8117/12174). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Agility\", icon spell_holy_blessingofagility.jpg)."
+    "note": "Scroll of Agility (rank VIII id 33077, older ranks 8116/8117/12174). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Agility\", icon spell_holy_blessingofagility.jpg). Uptime-only — tracked for Physical DPS only."
   },
   {
-    "name": "Scrolls",
+    "name": "Scroll: Spirit",
     "spell_ids": [33080],
     "category": "scroll",
+    "metric": "uptime",
+    "roles": ["Healer", "Caster DPS"],
     "verified": true,
-    "note": "Scroll of Spirit (rank VIII id 33080). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Spirit\", icon spell_shadow_burningspirit.jpg)."
+    "note": "Scroll of Spirit (rank VIII id 33080). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Spirit\", icon spell_shadow_burningspirit.jpg). Uptime-only — tracked for Healer/Caster DPS only."
   },
   {
-    "name": "Scrolls",
-    "spell_ids": [33079],
-    "category": "scroll",
-    "verified": true,
-    "note": "Scroll of Protection (rank VIII id 33079). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Armor\", icon ability_warrior_defensivestance.jpg)."
-  },
-  {
-    "name": "Scrolls",
+    "name": "Scroll: Intellect",
     "spell_ids": [],
     "category": "scroll",
+    "metric": "uptime",
+    "roles": ["Healer", "Caster DPS"],
     "verified": false,
-    "note": "Scroll of Intellect/Stamina not seen in any reference report (BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, MBcFhJPat9mCqvk2) — spell ids unknown. Add via the WCL UI (?type=casts&ability=<spell_id>) or /report/tables/buffs once spotted live."
+    "note": "Scroll of Intellect not seen in any reference report (BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, MBcFhJPat9mCqvk2) — spell id unknown. Add via the WCL UI (?type=casts&ability=<spell_id>) or /report/tables/buffs once spotted live."
+  },
+  {
+    "name": "Scroll: Protection",
+    "spell_ids": [33079],
+    "category": "scroll",
+    "metric": "uptime",
+    "roles": ["Tank"],
+    "verified": true,
+    "note": "Scroll of Protection (rank VIII id 33079). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (buff name \"Armor\", icon ability_warrior_defensivestance.jpg). Uptime-only — tracked for Tank only."
   },
   {
     "name": "Flask",
-    "spell_ids": [],
+    "spell_ids": [28520, 28521, 28540, 40576],
     "category": "flask",
-    "verified": false,
-    "note": "Placeholder bucket — every Flask of ... type merges here by sharing this name. Spell ids not yet confirmed against a live report; look them up via the WCL UI (?type=casts&ability=<spell_id>) and add one entry per flask type with this same name."
+    "metric": "uptime",
+    "verified": true,
+    "note": "Every Flask of ... buff merges here by sharing this name (Flask of Relentless Assault 28520, Flask of Blinding Light 28521, Flask of Pure Death 28540, Unstable Flask of the Sorcerer 40576). Confirmed live via /report/tables/buffs on reports BmT7rWYMqNLzZQAc, dkCrVTKcxnGqQZta, and MBcFhJPat9mCqvk2 (matched on literal \"Flask\" in the buff name). Uptime-only, no roles restriction (tracked for every role) — add a new flask type's spell id here, not as a separate entry, if one not in this list shows up live."
   },
   {
     "name": "Elixir",
-    "spell_ids": [],
+    "spell_ids": [33721, 39627, 39625, 17538, 17539, 28497, 28502, 28490, 17628],
     "category": "elixir",
-    "verified": false,
-    "note": "Placeholder bucket — every Battle/Guardian Elixir merges here by sharing this name (Battle and Guardian are not split, same as the project's earlier buff-uptime approach). Spell ids not yet confirmed against a live report; look them up via the WCL UI and add one entry per elixir type with this same name."
+    "metric": "uptime",
+    "verified": true,
+    "note": "Every Battle/Guardian Elixir merges here by sharing this name (Battle and Guardian are not split). Confirmed live via /report/tables/buffs on the 3 reference reports: Adept's Elixir 33721, Elixir of Draenic Wisdom 39627, Elixir of Major Fortitude 39625, Elixir of the Mongoose 17538, Greater Arcane Elixir 17539, Major Agility 28497 (Elixir of Major Agility), Major Armor 28502 (Elixir of Major Defense), Major Strength 28490 (Elixir of Major Strength), Supreme Power 17628 (Elixir of Supreme Power). Uptime-only, no roles restriction — add a new elixir type's spell id here, not as a separate entry, once seen live."
+  },
+  {
+    "name": "Well Fed",
+    "spell_ids": [33268, 33259, 43764, 33256, 33263, 43771, 33261, 33257, 43722, 29601, 35095, 43837],
+    "category": "food",
+    "metric": "uptime",
+    "verified": true,
+    "note": "Raid-food buff, every stat-food tier merges here by sharing this name. Confirmed live via /report/tables/buffs on the 3 reference reports — all ids share icon spell_misc_food.jpg. Some appeared under a glitchy resolved name (\"Enlightened\"/\"Enlightenment\"/\"UseDatabase\" instead of \"Well Fed\") in a given report pull — a known WCL ability-name-resolution quirk, not a different buff; classified by icon instead of by the (sometimes wrong) name field. Uptime-only, no roles restriction."
   },
   {
     "name": "Mana Emerald",

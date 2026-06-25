@@ -151,16 +151,22 @@ function buildRoleTable(role, members, isSummary) {
       table.appendChild(row);
     }
 
-    const totalRow = document.createElement("tr");
-    totalRow.className = "total-row";
-    totalRow.appendChild(rowLabelCell("Total"));
-    for (const p of members) {
-      const consumables = consumablesOf(p, isSummary);
-      const total = categoryNames.reduce((sum, name) => sum + (consumables[name] ?? 0), 0);
-      const cell = plainCell(total === 0 ? "" : Math.round(total * 10) / 10);
-      totalRow.appendChild(cell);
+    // Summing percentages (every "... Uptime %" row) produces a meaningless
+    // number — e.g. Flask 19% + Elixir 20% + Well Fed 38% isn't a 77%
+    // anything. Skip the Total row entirely when every row in this category
+    // is a percentage metric; only render it for real summable counts.
+    if (!categoryNames.every((name) => name.endsWith("Uptime %"))) {
+      const totalRow = document.createElement("tr");
+      totalRow.className = "total-row";
+      totalRow.appendChild(rowLabelCell("Total"));
+      for (const p of members) {
+        const consumables = consumablesOf(p, isSummary);
+        const total = categoryNames.reduce((sum, name) => sum + (consumables[name] ?? 0), 0);
+        const cell = plainCell(total === 0 ? "" : Math.round(total * 10) / 10);
+        totalRow.appendChild(cell);
+      }
+      table.appendChild(totalRow);
     }
-    table.appendChild(totalRow);
   }
 
   return table;

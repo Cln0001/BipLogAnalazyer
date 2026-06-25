@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< Updated upstream
   "generated_at": "2026-06-25T16:16:47+00:00",
+=======
+  "generated_at": "2026-06-25T13:34:24+00:00",
+>>>>>>> Stashed changes
   "role_order": [
     "Tank",
     "Healer",
@@ -21,16 +25,36 @@
     "Explosives": "FFB3B3"
   },
   "consumable_categories": {
+<<<<<<< Updated upstream
     "Living/Free Action Potion": "Potions",
+=======
+    "Well Fed Uptime %": "Buffs/Items",
+    "Demonic Rune/Dark Rune": "Others",
+    "Living/Free Action Potion": "Potions",
+    "Haste": "Potions",
+    "Scroll: Strength Uptime %": "Buffs/Items",
+>>>>>>> Stashed changes
     "Sapper/Nades": "Explosives",
     "Drums": "Explosives",
     "Ironshield Potion": "Potions",
+<<<<<<< Updated upstream
     "Mana": "Potions",
     "Haste": "Potions",
     "Destro": "Potions",
     "Scrolls": "Buffs/Items",
     "Demonic Rune/Dark Rune": "Others",
     "Flame Cap": "Others"
+=======
+    "Flame Cap": "Others",
+    "Drums": "Explosives",
+    "Mana": "Potions",
+    "Flask Uptime %": "Buffs/Items",
+    "Scroll: Agility Uptime %": "Buffs/Items",
+    "Scroll: Spirit Uptime %": "Buffs/Items",
+    "Elixir Uptime %": "Buffs/Items",
+    "Destro": "Potions",
+    "Scroll: Protection Uptime %": "Buffs/Items"
+>>>>>>> Stashed changes
   },
   "phase_order": [
     "2"
@@ -56,7 +80,9 @@
               "role": "Healer",
               "consumables": {
                 "Mana": 14,
-                "Drums": 5
+                "Drums": 5,
+                "Elixir Uptime %": 80.2,
+                "Well Fed Uptime %": 80.2
               }
             },
             {
@@ -66,7 +92,9 @@
               "consumables": {
                 "Sapper/Nades": 35,
                 "Destro": 19,
-                "Demonic Rune/Dark Rune": 5
+                "Demonic Rune/Dark Rune": 5,
+                "Flask Uptime %": 71.5,
+                "Well Fed Uptime %": 76.0
               }
             },
             {
@@ -74,7 +102,9 @@
               "class_name": "Druid",
               "role": "Physical DPS",
               "consumables": {
-                "Haste": 2
+                "Haste": 2,
+                "Elixir Uptime %": 75.0,
+                "Well Fed Uptime %": 48.2
               }
             },
             {
@@ -84,7 +114,9 @@
               "consumables": {
                 "Sapper/Nades": 22,
                 "Haste": 8,
-                "Living/Free Action Potion": 1
+                "Living/Free Action Potion": 1,
+                "Flask Uptime %": 71.5,
+                "Well Fed Uptime %": 85.5
               }
             },
             {
@@ -94,7 +126,10 @@
               "consumables": {
                 "Haste": 4,
                 "Mana": 10,
-                "Drums": 4
+                "Drums": 4,
+                "Scroll: Agility Uptime %": 53.5,
+                "Elixir Uptime %": 82.9,
+                "Well Fed Uptime %": 82.9
               }
             },
             {
@@ -102,7 +137,9 @@
               "class_name": "Priest",
               "role": "Healer",
               "consumables": {
-                "Mana": 2
+                "Mana": 2,
+                "Elixir Uptime %": 78.2,
+                "Well Fed Uptime %": 77.2
               }
             },
             {
@@ -113,7 +150,10 @@
                 "Destro": 16,
                 "Demonic Rune/Dark Rune": 7,
                 "Mana": 3,
-                "Sapper/Nades": 5
+                "Sapper/Nades": 5,
+                "Scroll: Spirit Uptime %": 73.6,
+                "Flask Uptime %": 71.5,
+                "Well Fed Uptime %": 75.9
               }
             },
             {
@@ -122,8 +162,16 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 16,
+<<<<<<< Updated upstream
                 "Scrolls": 2,
                 "Haste": 17
+=======
+                "Haste": 17,
+                "Scroll: Strength Uptime %": 58.9,
+                "Scroll: Agility Uptime %": 58.9,
+                "Flask Uptime %": 71.5,
+                "Well Fed Uptime %": 86.5
+>>>>>>> Stashed changes
               }
             },
             {
@@ -131,7 +179,10 @@
               "class_name": "Mage",
               "role": "Caster DPS",
               "consumables": {
-                "Mana": 20
+                "Mana": 20,
+                "Scroll: Spirit Uptime %": 51.4,
+                "Elixir Uptime %": 181.0,
+                "Well Fed Uptime %": 76.6
               }
             },
             {
@@ -142,7 +193,9 @@
                 "Destro": 9,
                 "Drums": 15,
                 "Demonic Rune/Dark Rune": 3,
-                "Mana": 4
+                "Mana": 4,
+                "Flask Uptime %": 70.0,
+                "Well Fed Uptime %": 76.6
               }
             },
             {
@@ -151,7 +204,11 @@
               "role": "Physical DPS",
               "consumables": {
                 "Haste": 2,
-                "Sapper/Nades": 2
+                "Sapper/Nades": 2,
+                "Scroll: Strength Uptime %": 0.0,
+                "Scroll: Agility Uptime %": 0.0,
+                "Elixir Uptime %": 106.9,
+                "Well Fed Uptime %": 79.6
               }
             },
             {
@@ -163,7 +220,11 @@
                 "Scrolls": 2,
                 "Drums": 18,
                 "Haste": 15,
-                "Mana": 2
+                "Mana": 2,
+                "Scroll: Strength Uptime %": 37.4,
+                "Scroll: Agility Uptime %": 47.0,
+                "Flask Uptime %": 71.3,
+                "Well Fed Uptime %": 72.0
               }
             },
             {
@@ -173,14 +234,18 @@
               "consumables": {
                 "Drums": 15,
                 "Mana": 17,
-                "Demonic Rune/Dark Rune": 6
+                "Demonic Rune/Dark Rune": 6,
+                "Well Fed Uptime %": 84.0
               }
             },
             {
               "name": "Nmfwl",
               "class_name": "Warlock",
               "role": "Caster DPS",
-              "consumables": {}
+              "consumables": {
+                "Flask Uptime %": 71.5,
+                "Well Fed Uptime %": 80.3
+              }
             },
             {
               "name": "Nora",
@@ -189,7 +254,15 @@
               "consumables": {
                 "Sapper/Nades": 35,
                 "Haste": 20,
+<<<<<<< Updated upstream
                 "Scrolls": 2
+=======
+                "Scroll: Strength Uptime %": 49.6,
+                "Scroll: Agility Uptime %": 29.5,
+                "Flask Uptime %": 71.5,
+                "Elixir Uptime %": 0.0,
+                "Well Fed Uptime %": 80.6
+>>>>>>> Stashed changes
               }
             },
             {
@@ -199,7 +272,10 @@
               "consumables": {
                 "Sapper/Nades": 22,
                 "Destro": 9,
-                "Ironshield Potion": 5
+                "Ironshield Potion": 5,
+                "Scroll: Protection Uptime %": 52.3,
+                "Elixir Uptime %": 74.3,
+                "Well Fed Uptime %": 74.3
               }
             },
             {
@@ -210,7 +286,11 @@
                 "Haste": 10,
                 "Sapper/Nades": 9,
                 "Demonic Rune/Dark Rune": 3,
-                "Mana": 1
+                "Mana": 1,
+                "Scroll: Strength Uptime %": 42.6,
+                "Scroll: Agility Uptime %": 42.6,
+                "Elixir Uptime %": 83.0,
+                "Well Fed Uptime %": 83.0
               }
             },
             {
@@ -218,7 +298,9 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 17
+                "Destro": 17,
+                "Flask Uptime %": 71.5,
+                "Well Fed Uptime %": 75.3
               }
             },
             {
@@ -228,7 +310,13 @@
               "consumables": {
                 "Mana": 15,
                 "Destro": 7,
+<<<<<<< Updated upstream
                 "Scrolls": 1
+=======
+                "Scroll: Spirit Uptime %": 42.4,
+                "Elixir Uptime %": 67.1,
+                "Well Fed Uptime %": 64.6
+>>>>>>> Stashed changes
               }
             },
             {
@@ -238,7 +326,9 @@
               "consumables": {
                 "Destro": 19,
                 "Demonic Rune/Dark Rune": 14,
-                "Mana": 5
+                "Mana": 5,
+                "Flask Uptime %": 71.5,
+                "Well Fed Uptime %": 77.3
               }
             },
             {
@@ -246,7 +336,9 @@
               "class_name": "Paladin",
               "role": "Healer",
               "consumables": {
-                "Mana": 15
+                "Mana": 15,
+                "Elixir Uptime %": 48.1,
+                "Well Fed Uptime %": 62.9
               }
             },
             {
@@ -256,7 +348,14 @@
               "consumables": {
                 "Drums": 18,
                 "Haste": 5,
+<<<<<<< Updated upstream
                 "Scrolls": 2
+=======
+                "Scroll: Strength Uptime %": 0.0,
+                "Scroll: Agility Uptime %": 0.0,
+                "Flask Uptime %": 71.5,
+                "Well Fed Uptime %": 71.7
+>>>>>>> Stashed changes
               }
             },
             {
@@ -266,7 +365,14 @@
               "consumables": {
                 "Sapper/Nades": 21,
                 "Haste": 12,
+<<<<<<< Updated upstream
                 "Scrolls": 1
+=======
+                "Scroll: Strength Uptime %": 26.7,
+                "Scroll: Agility Uptime %": 17.2,
+                "Flask Uptime %": 70.8,
+                "Well Fed Uptime %": 60.9
+>>>>>>> Stashed changes
               }
             },
             {
@@ -275,7 +381,10 @@
               "role": "Physical DPS",
               "consumables": {
                 "Haste": 14,
-                "Mana": 6
+                "Mana": 6,
+                "Scroll: Agility Uptime %": 45.2,
+                "Elixir Uptime %": 84.0,
+                "Well Fed Uptime %": 84.0
               }
             },
             {
@@ -283,7 +392,8 @@
               "class_name": "Druid",
               "role": "Healer",
               "consumables": {
-                "Mana": 15
+                "Mana": 15,
+                "Well Fed Uptime %": 70.8
               }
             }
           ]
@@ -297,7 +407,9 @@
               "class_name": "Druid",
               "role": "Physical DPS",
               "consumables": {
-                "Haste": 1
+                "Haste": 1,
+                "Elixir Uptime %": 130.8,
+                "Well Fed Uptime %": 33.6
               }
             },
             {
@@ -307,7 +419,9 @@
               "consumables": {
                 "Sapper/Nades": 35,
                 "Haste": 8,
-                "Living/Free Action Potion": 1
+                "Living/Free Action Potion": 1,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 80.2
               }
             },
             {
@@ -316,14 +430,20 @@
               "role": "Physical DPS",
               "consumables": {
                 "Haste": 8,
-                "Mana": 12
+                "Mana": 12,
+                "Scroll: Agility Uptime %": 80.2,
+                "Elixir Uptime %": 80.2,
+                "Well Fed Uptime %": 80.2
               }
             },
             {
               "name": "Dunkiee",
               "class_name": "Priest",
               "role": "Healer",
-              "consumables": {}
+              "consumables": {
+                "Elixir Uptime %": 56.5,
+                "Well Fed Uptime %": 67.7
+              }
             },
             {
               "name": "Flect",
@@ -333,7 +453,10 @@
                 "Destro": 18,
                 "Sapper/Nades": 6,
                 "Demonic Rune/Dark Rune": 8,
-                "Mana": 2
+                "Mana": 2,
+                "Scroll: Spirit Uptime %": 85.9,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 80.2
               }
             },
             {
@@ -343,7 +466,11 @@
               "consumables": {
                 "Scrolls": 2,
                 "Haste": 14,
-                "Sapper/Nades": 6
+                "Sapper/Nades": 6,
+                "Scroll: Strength Uptime %": 72.7,
+                "Scroll: Agility Uptime %": 72.7,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 79.5
               }
             },
             {
@@ -352,7 +479,13 @@
               "role": "Caster DPS",
               "consumables": {
                 "Mana": 12,
+<<<<<<< Updated upstream
                 "Scrolls": 1
+=======
+                "Scroll: Spirit Uptime %": 58.7,
+                "Elixir Uptime %": 130.8,
+                "Well Fed Uptime %": 67.0
+>>>>>>> Stashed changes
               }
             },
             {
@@ -363,7 +496,9 @@
                 "Drums": 16,
                 "Destro": 8,
                 "Demonic Rune/Dark Rune": 4,
-                "Mana": 4
+                "Mana": 4,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 80.2
               }
             },
             {
@@ -371,7 +506,8 @@
               "class_name": "Paladin",
               "role": "Healer",
               "consumables": {
-                "Mana": 16
+                "Mana": 16,
+                "Well Fed Uptime %": 82.7
               }
             },
             {
@@ -381,7 +517,11 @@
               "consumables": {
                 "Haste": 5,
                 "Sapper/Nades": 4,
-                "Mana": 1
+                "Mana": 1,
+                "Scroll: Strength Uptime %": 78.4,
+                "Scroll: Agility Uptime %": 78.7,
+                "Elixir Uptime %": 80.2,
+                "Well Fed Uptime %": 80.2
               }
             },
             {
@@ -393,7 +533,9 @@
                 "Drums": 11,
                 "Sapper/Nades": 5,
                 "Demonic Rune/Dark Rune": 1,
-                "Mana": 1
+                "Mana": 1,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 80.2
               }
             },
             {
@@ -402,7 +544,9 @@
               "role": "Healer",
               "consumables": {
                 "Drums": 10,
-                "Mana": 8
+                "Mana": 8,
+                "Scroll: Spirit Uptime %": 47.8,
+                "Well Fed Uptime %": 73.7
               }
             },
             {
@@ -411,7 +555,10 @@
               "role": "Physical DPS",
               "consumables": {
                 "Haste": 7,
-                "Sapper/Nades": 14
+                "Sapper/Nades": 14,
+                "Flask Uptime %": 74.2,
+                "Elixir Uptime %": 48.7,
+                "Well Fed Uptime %": 94.0
               }
             },
             {
@@ -422,7 +569,10 @@
                 "Sapper/Nades": 17,
                 "Destro": 7,
                 "Ironshield Potion": 8,
-                "Mana": 1
+                "Mana": 1,
+                "Scroll: Protection Uptime %": 66.0,
+                "Elixir Uptime %": 79.4,
+                "Well Fed Uptime %": 79.4
               }
             },
             {
@@ -431,7 +581,13 @@
               "role": "Caster DPS",
               "consumables": {
                 "Mana": 19,
+<<<<<<< Updated upstream
                 "Scrolls": 1
+=======
+                "Scroll: Spirit Uptime %": 73.3,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 73.3
+>>>>>>> Stashed changes
               }
             },
             {
@@ -442,7 +598,11 @@
                 "Haste": 11,
                 "Sapper/Nades": 12,
                 "Demonic Rune/Dark Rune": 5,
-                "Mana": 1
+                "Mana": 1,
+                "Scroll: Strength Uptime %": 73.3,
+                "Scroll: Agility Uptime %": 73.3,
+                "Elixir Uptime %": 86.7,
+                "Well Fed Uptime %": 86.7
               }
             },
             {
@@ -451,7 +611,9 @@
               "role": "Healer",
               "consumables": {
                 "Drums": 11,
-                "Mana": 16
+                "Mana": 16,
+                "Elixir Uptime %": 77.1,
+                "Well Fed Uptime %": 77.1
               }
             },
             {
@@ -459,7 +621,9 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 13
+                "Destro": 13,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 77.0
               }
             },
             {
@@ -469,7 +633,13 @@
               "consumables": {
                 "Destro": 6,
                 "Mana": 9,
+<<<<<<< Updated upstream
                 "Scrolls": 2
+=======
+                "Scroll: Spirit Uptime %": 80.2,
+                "Elixir Uptime %": 80.2,
+                "Well Fed Uptime %": 80.2
+>>>>>>> Stashed changes
               }
             },
             {
@@ -479,7 +649,9 @@
               "consumables": {
                 "Destro": 12,
                 "Demonic Rune/Dark Rune": 13,
-                "Mana": 1
+                "Mana": 1,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 77.0
               }
             },
             {
@@ -487,7 +659,9 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 16
+                "Destro": 16,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 75.9
               }
             },
             {
@@ -497,7 +671,11 @@
               "consumables": {
                 "Scrolls": 4,
                 "Drums": 18,
-                "Haste": 10
+                "Haste": 10,
+                "Scroll: Strength Uptime %": 50.9,
+                "Scroll: Agility Uptime %": 57.8,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 46.3
               }
             },
             {
@@ -507,8 +685,16 @@
               "consumables": {
                 "Sapper/Nades": 28,
                 "Haste": 16,
+<<<<<<< Updated upstream
                 "Scrolls": 2,
                 "Flame Cap": 2
+=======
+                "Flame Cap": 2,
+                "Scroll: Strength Uptime %": 72.4,
+                "Scroll: Agility Uptime %": 25.4,
+                "Flask Uptime %": 80.2,
+                "Well Fed Uptime %": 69.3
+>>>>>>> Stashed changes
               }
             },
             {
@@ -518,7 +704,10 @@
               "consumables": {
                 "Haste": 12,
                 "Mana": 5,
-                "Sapper/Nades": 2
+                "Sapper/Nades": 2,
+                "Scroll: Agility Uptime %": 69.6,
+                "Elixir Uptime %": 75.6,
+                "Well Fed Uptime %": 75.6
               }
             },
             {
@@ -526,7 +715,9 @@
               "class_name": "Druid",
               "role": "Healer",
               "consumables": {
-                "Mana": 10
+                "Mana": 10,
+                "Elixir Uptime %": 88.2,
+                "Well Fed Uptime %": 88.2
               }
             }
           ]
@@ -541,7 +732,10 @@
               "role": "Healer",
               "consumables": {
                 "Mana": 16,
-                "Drums": 12
+                "Drums": 12,
+                "Scroll: Spirit Uptime %": 95.8,
+                "Elixir Uptime %": 95.8,
+                "Well Fed Uptime %": 95.8
               }
             },
             {
@@ -551,7 +745,9 @@
               "consumables": {
                 "Sapper/Nades": 35,
                 "Destro": 15,
-                "Demonic Rune/Dark Rune": 9
+                "Demonic Rune/Dark Rune": 9,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 79.8
               }
             },
             {
@@ -561,7 +757,9 @@
               "consumables": {
                 "Sapper/Nades": 27,
                 "Haste": 6,
-                "Living/Free Action Potion": 1
+                "Living/Free Action Potion": 1,
+                "Flask Uptime %": 86.1,
+                "Well Fed Uptime %": 80.3
               }
             },
             {
@@ -570,7 +768,9 @@
               "role": "Physical DPS",
               "consumables": {
                 "Drums": 16,
-                "Mana": 8
+                "Mana": 8,
+                "Elixir Uptime %": 31.8,
+                "Well Fed Uptime %": 55.1
               }
             },
             {
@@ -579,7 +779,11 @@
               "role": "Physical DPS",
               "consumables": {
                 "Mana": 13,
-                "Haste": 10
+                "Haste": 10,
+                "Scroll: Strength Uptime %": 36.5,
+                "Scroll: Agility Uptime %": 55.5,
+                "Elixir Uptime %": 80.3,
+                "Well Fed Uptime %": 80.3
               }
             },
             {
@@ -590,7 +794,10 @@
                 "Destro": 18,
                 "Demonic Rune/Dark Rune": 6,
                 "Sapper/Nades": 5,
-                "Mana": 2
+                "Mana": 2,
+                "Scroll: Spirit Uptime %": 76.2,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 76.2
               }
             },
             {
@@ -600,7 +807,14 @@
               "consumables": {
                 "Sapper/Nades": 32,
                 "Haste": 16,
+<<<<<<< Updated upstream
                 "Scrolls": 1
+=======
+                "Scroll: Strength Uptime %": 72.4,
+                "Scroll: Agility Uptime %": 72.4,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 91.8
+>>>>>>> Stashed changes
               }
             },
             {
@@ -608,7 +822,9 @@
               "class_name": "Mage",
               "role": "Caster DPS",
               "consumables": {
-                "Mana": 17
+                "Mana": 17,
+                "Elixir Uptime %": 147.0,
+                "Well Fed Uptime %": 73.5
               }
             },
             {
@@ -616,7 +832,10 @@
               "class_name": "Priest",
               "role": "Healer",
               "consumables": {
-                "Mana": 6
+                "Mana": 6,
+                "Scroll: Spirit Uptime %": 9.9,
+                "Elixir Uptime %": 77.5,
+                "Well Fed Uptime %": 72.6
               }
             },
             {
@@ -627,7 +846,9 @@
                 "Drums": 18,
                 "Destro": 12,
                 "Demonic Rune/Dark Rune": 3,
-                "Mana": 2
+                "Mana": 2,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 79.3
               }
             },
             {
@@ -635,7 +856,9 @@
               "class_name": "Paladin",
               "role": "Healer",
               "consumables": {
-                "Mana": 12
+                "Mana": 12,
+                "Elixir Uptime %": 22.4,
+                "Well Fed Uptime %": 82.3
               }
             },
             {
@@ -644,7 +867,11 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 3,
-                "Haste": 2
+                "Haste": 2,
+                "Scroll: Strength Uptime %": 49.0,
+                "Scroll: Agility Uptime %": 49.0,
+                "Elixir Uptime %": 98.3,
+                "Well Fed Uptime %": 98.3
               }
             },
             {
@@ -655,7 +882,12 @@
                 "Sapper/Nades": 8,
                 "Haste": 10,
                 "Drums": 17,
-                "Mana": 1
+                "Mana": 1,
+                "Scroll: Strength Uptime %": 66.7,
+                "Scroll: Agility Uptime %": 66.7,
+                "Flask Uptime %": 68.7,
+                "Elixir Uptime %": 23.0,
+                "Well Fed Uptime %": 79.4
               }
             },
             {
@@ -664,7 +896,9 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 18,
-                "Haste": 15
+                "Haste": 15,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 42.8
               }
             },
             {
@@ -676,7 +910,13 @@
                 "Destro": 5,
                 "Ironshield Potion": 11,
                 "Mana": 4,
+<<<<<<< Updated upstream
                 "Scrolls": 1
+=======
+                "Scroll: Protection Uptime %": 70.5,
+                "Elixir Uptime %": 70.5,
+                "Well Fed Uptime %": 70.5
+>>>>>>> Stashed changes
               }
             },
             {
@@ -685,7 +925,10 @@
               "role": "Caster DPS",
               "consumables": {
                 "Mana": 18,
-                "Demonic Rune/Dark Rune": 1
+                "Demonic Rune/Dark Rune": 1,
+                "Scroll: Spirit Uptime %": 79.8,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 79.8
               }
             },
             {
@@ -695,8 +938,16 @@
               "consumables": {
                 "Sapper/Nades": 10,
                 "Haste": 7,
+<<<<<<< Updated upstream
                 "Scrolls": 1,
                 "Demonic Rune/Dark Rune": 1
+=======
+                "Demonic Rune/Dark Rune": 1,
+                "Scroll: Strength Uptime %": 52.5,
+                "Scroll: Agility Uptime %": 52.5,
+                "Elixir Uptime %": 71.6,
+                "Well Fed Uptime %": 65.3
+>>>>>>> Stashed changes
               }
             },
             {
@@ -705,7 +956,10 @@
               "role": "Healer",
               "consumables": {
                 "Drums": 10,
-                "Mana": 14
+                "Mana": 14,
+                "Scroll: Spirit Uptime %": 75.4,
+                "Elixir Uptime %": 80.3,
+                "Well Fed Uptime %": 80.3
               }
             },
             {
@@ -713,7 +967,9 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 16
+                "Destro": 16,
+                "Flask Uptime %": 68.7,
+                "Well Fed Uptime %": 66.7
               }
             },
             {
@@ -722,7 +978,9 @@
               "role": "Caster DPS",
               "consumables": {
                 "Destro": 17,
-                "Demonic Rune/Dark Rune": 9
+                "Demonic Rune/Dark Rune": 9,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 67.5
               }
             },
             {
@@ -730,7 +988,9 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 11
+                "Destro": 11,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 59.0
               }
             },
             {
@@ -739,7 +999,11 @@
               "role": "Physical DPS",
               "consumables": {
                 "Drums": 26,
-                "Haste": 9
+                "Haste": 9,
+                "Scroll: Strength Uptime %": 82.9,
+                "Scroll: Agility Uptime %": 82.9,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 90.8
               }
             },
             {
@@ -748,7 +1012,11 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 27,
-                "Haste": 15
+                "Haste": 15,
+                "Scroll: Strength Uptime %": 77.2,
+                "Scroll: Agility Uptime %": 26.6,
+                "Flask Uptime %": 80.3,
+                "Well Fed Uptime %": 78.0
               }
             },
             {
@@ -758,7 +1026,10 @@
               "consumables": {
                 "Sapper/Nades": 3,
                 "Haste": 16,
-                "Mana": 3
+                "Mana": 3,
+                "Scroll: Agility Uptime %": 81.2,
+                "Elixir Uptime %": 76.2,
+                "Well Fed Uptime %": 76.2
               }
             },
             {
@@ -766,7 +1037,9 @@
               "class_name": "Druid",
               "role": "Healer",
               "consumables": {
-                "Mana": 2
+                "Mana": 2,
+                "Elixir Uptime %": 80.3,
+                "Well Fed Uptime %": 73.7
               }
             }
           ]
@@ -781,8 +1054,15 @@
               "role": "Healer",
               "consumables": {
                 "Mana": 14,
+<<<<<<< Updated upstream
                 "Scrolls": 3,
                 "Drums": 5
+=======
+                "Drums": 5,
+                "Scroll: Spirit Uptime %": 72.0,
+                "Elixir Uptime %": 72.0,
+                "Well Fed Uptime %": 72.0
+>>>>>>> Stashed changes
               }
             },
             {
@@ -791,7 +1071,9 @@
               "role": "Caster DPS",
               "consumables": {
                 "Sapper/Nades": 24,
-                "Destro": 14
+                "Destro": 14,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 61.5
               }
             },
             {
@@ -801,7 +1083,10 @@
               "consumables": {
                 "Sapper/Nades": 24,
                 "Haste": 8,
-                "Living/Free Action Potion": 1
+                "Living/Free Action Potion": 1,
+                "Flask Uptime %": 78.3,
+                "Elixir Uptime %": 0.0,
+                "Well Fed Uptime %": 76.0
               }
             },
             {
@@ -811,7 +1096,11 @@
               "consumables": {
                 "Scrolls": 2,
                 "Haste": 9,
-                "Mana": 11
+                "Mana": 11,
+                "Scroll: Strength Uptime %": 51.3,
+                "Scroll: Agility Uptime %": 75.8,
+                "Elixir Uptime %": 76.8,
+                "Well Fed Uptime %": 76.8
               }
             },
             {
@@ -822,7 +1111,10 @@
                 "Destro": 14,
                 "Sapper/Nades": 5,
                 "Demonic Rune/Dark Rune": 4,
-                "Mana": 2
+                "Mana": 2,
+                "Scroll: Spirit Uptime %": 30.0,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 77.7
               }
             },
             {
@@ -831,7 +1123,11 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 20,
-                "Haste": 12
+                "Haste": 12,
+                "Scroll: Strength Uptime %": 52.6,
+                "Scroll: Agility Uptime %": 52.6,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 84.9
               }
             },
             {
@@ -839,7 +1135,10 @@
               "class_name": "Mage",
               "role": "Caster DPS",
               "consumables": {
-                "Mana": 15
+                "Mana": 15,
+                "Scroll: Spirit Uptime %": 27.0,
+                "Elixir Uptime %": 154.8,
+                "Well Fed Uptime %": 76.2
               }
             },
             {
@@ -847,7 +1146,10 @@
               "class_name": "Priest",
               "role": "Healer",
               "consumables": {
-                "Mana": 18
+                "Mana": 18,
+                "Scroll: Spirit Uptime %": 51.6,
+                "Elixir Uptime %": 77.2,
+                "Well Fed Uptime %": 63.4
               }
             },
             {
@@ -858,7 +1160,11 @@
                 "Scrolls": 3,
                 "Haste": 11,
                 "Demonic Rune/Dark Rune": 2,
-                "Mana": 2
+                "Mana": 2,
+                "Scroll: Strength Uptime %": 77.3,
+                "Scroll: Agility Uptime %": 77.3,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 77.3
               }
             },
             {
@@ -868,7 +1174,11 @@
               "consumables": {
                 "Sapper/Nades": 4,
                 "Haste": 4,
-                "Ironshield Potion": 1
+                "Ironshield Potion": 1,
+                "Scroll: Strength Uptime %": 75.5,
+                "Scroll: Agility Uptime %": 75.5,
+                "Elixir Uptime %": 151.1,
+                "Well Fed Uptime %": 75.5
               }
             },
             {
@@ -878,7 +1188,10 @@
               "consumables": {
                 "Drums": 13,
                 "Mana": 19,
-                "Demonic Rune/Dark Rune": 4
+                "Demonic Rune/Dark Rune": 4,
+                "Scroll: Spirit Uptime %": 17.1,
+                "Elixir Uptime %": 73.4,
+                "Well Fed Uptime %": 76.6
               }
             },
             {
@@ -886,7 +1199,9 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 15
+                "Destro": 15,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 76.9
               }
             },
             {
@@ -894,7 +1209,11 @@
               "class_name": "Rogue",
               "role": "Physical DPS",
               "consumables": {
-                "Haste": 15
+                "Haste": 15,
+                "Scroll: Agility Uptime %": 45.7,
+                "Flask Uptime %": 78.3,
+                "Elixir Uptime %": 28.9,
+                "Well Fed Uptime %": 89.4
               }
             },
             {
@@ -905,8 +1224,15 @@
                 "Sapper/Nades": 22,
                 "Destro": 6,
                 "Ironshield Potion": 5,
+<<<<<<< Updated upstream
                 "Scrolls": 2,
                 "Mana": 1
+=======
+                "Mana": 1,
+                "Scroll: Protection Uptime %": 67.7,
+                "Elixir Uptime %": 74.6,
+                "Well Fed Uptime %": 57.1
+>>>>>>> Stashed changes
               }
             },
             {
@@ -915,8 +1241,15 @@
               "role": "Caster DPS",
               "consumables": {
                 "Mana": 16,
+<<<<<<< Updated upstream
                 "Scrolls": 1,
                 "Demonic Rune/Dark Rune": 1
+=======
+                "Demonic Rune/Dark Rune": 1,
+                "Scroll: Spirit Uptime %": 77.6,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 72.7
+>>>>>>> Stashed changes
               }
             },
             {
@@ -926,7 +1259,9 @@
               "consumables": {
                 "Destro": 12,
                 "Mana": 2,
-                "Demonic Rune/Dark Rune": 2
+                "Demonic Rune/Dark Rune": 2,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 56.0
               }
             },
             {
@@ -935,7 +1270,11 @@
               "role": "Physical DPS",
               "consumables": {
                 "Drums": 6,
-                "Haste": 15
+                "Haste": 15,
+                "Scroll: Strength Uptime %": 65.4,
+                "Scroll: Agility Uptime %": 65.4,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 65.4
               }
             },
             {
@@ -943,7 +1282,10 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 5
+                "Destro": 5,
+                "Flask Uptime %": 65.9,
+                "Elixir Uptime %": 12.4,
+                "Well Fed Uptime %": 59.8
               }
             },
             {
@@ -952,7 +1294,11 @@
               "role": "Caster DPS",
               "consumables": {
                 "Destro": 8,
-                "Mana": 7
+                "Mana": 7,
+                "Scroll: Spirit Uptime %": 61.9,
+                "Flask Uptime %": 18.6,
+                "Elixir Uptime %": 86.5,
+                "Well Fed Uptime %": 61.9
               }
             },
             {
@@ -961,7 +1307,9 @@
               "role": "Caster DPS",
               "consumables": {
                 "Destro": 15,
-                "Demonic Rune/Dark Rune": 9
+                "Demonic Rune/Dark Rune": 9,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 76.2
               }
             },
             {
@@ -969,7 +1317,9 @@
               "class_name": "Paladin",
               "role": "Healer",
               "consumables": {
-                "Mana": 9
+                "Mana": 9,
+                "Elixir Uptime %": 62.9,
+                "Well Fed Uptime %": 48.6
               }
             },
             {
@@ -979,7 +1329,14 @@
               "consumables": {
                 "Drums": 28,
                 "Haste": 10,
+<<<<<<< Updated upstream
                 "Scrolls": 3
+=======
+                "Scroll: Strength Uptime %": 75.5,
+                "Scroll: Agility Uptime %": 75.5,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 77.5
+>>>>>>> Stashed changes
               }
             },
             {
@@ -989,7 +1346,11 @@
               "consumables": {
                 "Sapper/Nades": 31,
                 "Haste": 14,
-                "Flame Cap": 1
+                "Flame Cap": 1,
+                "Scroll: Strength Uptime %": 74.1,
+                "Scroll: Agility Uptime %": 5.7,
+                "Flask Uptime %": 78.3,
+                "Well Fed Uptime %": 74.1
               }
             },
             {
@@ -1000,7 +1361,10 @@
                 "Sapper/Nades": 3,
                 "Scrolls": 2,
                 "Haste": 10,
-                "Mana": 3
+                "Mana": 3,
+                "Scroll: Agility Uptime %": 68.8,
+                "Elixir Uptime %": 81.6,
+                "Well Fed Uptime %": 74.3
               }
             },
             {
@@ -1008,7 +1372,9 @@
               "class_name": "Druid",
               "role": "Healer",
               "consumables": {
-                "Mana": 10
+                "Mana": 10,
+                "Elixir Uptime %": 52.4,
+                "Well Fed Uptime %": 68.3
               }
             }
           ]
@@ -1024,7 +1390,13 @@
               "consumables": {
                 "Drums": 14,
                 "Mana": 3,
+<<<<<<< Updated upstream
                 "Scrolls": 2
+=======
+                "Scroll: Spirit Uptime %": 58.2,
+                "Elixir Uptime %": 150.5,
+                "Well Fed Uptime %": 75.2
+>>>>>>> Stashed changes
               }
             },
             {
@@ -1034,7 +1406,10 @@
               "consumables": {
                 "Sapper/Nades": 15,
                 "Destro": 14,
-                "Demonic Rune/Dark Rune": 7
+                "Demonic Rune/Dark Rune": 7,
+                "Scroll: Spirit Uptime %": 25.3,
+                "Flask Uptime %": 77.9,
+                "Well Fed Uptime %": 62.2
               }
             },
             {
@@ -1044,7 +1419,10 @@
               "consumables": {
                 "Drums": 11,
                 "Haste": 9,
-                "Mana": 7
+                "Mana": 7,
+                "Scroll: Agility Uptime %": 71.4,
+                "Elixir Uptime %": 77.9,
+                "Well Fed Uptime %": 77.9
               }
             },
             {
@@ -1054,7 +1432,10 @@
               "consumables": {
                 "Destro": 20,
                 "Sapper/Nades": 2,
-                "Demonic Rune/Dark Rune": 5
+                "Demonic Rune/Dark Rune": 5,
+                "Scroll: Spirit Uptime %": 26.4,
+                "Flask Uptime %": 77.9,
+                "Well Fed Uptime %": 76.6
               }
             },
             {
@@ -1066,7 +1447,11 @@
                 "Scrolls": 1,
                 "Haste": 9,
                 "Mana": 7,
-                "Demonic Rune/Dark Rune": 8
+                "Demonic Rune/Dark Rune": 8,
+                "Scroll: Strength Uptime %": 57.6,
+                "Scroll: Agility Uptime %": 68.8,
+                "Elixir Uptime %": 71.9,
+                "Well Fed Uptime %": 71.9
               }
             },
             {
@@ -1074,7 +1459,10 @@
               "class_name": "Mage",
               "role": "Caster DPS",
               "consumables": {
-                "Mana": 14
+                "Mana": 14,
+                "Scroll: Spirit Uptime %": 91.9,
+                "Elixir Uptime %": 183.8,
+                "Well Fed Uptime %": 91.9
               }
             },
             {
@@ -1084,7 +1472,11 @@
               "consumables": {
                 "Haste": 13,
                 "Flame Cap": 7,
-                "Sapper/Nades": 13
+                "Sapper/Nades": 13,
+                "Scroll: Strength Uptime %": 53.2,
+                "Scroll: Agility Uptime %": 53.2,
+                "Flask Uptime %": 77.9,
+                "Well Fed Uptime %": 84.7
               }
             },
             {
@@ -1092,7 +1484,9 @@
               "class_name": "Mage",
               "role": "Caster DPS",
               "consumables": {
-                "Mana": 15
+                "Mana": 15,
+                "Elixir Uptime %": 183.3,
+                "Well Fed Uptime %": 91.7
               }
             },
             {
@@ -1100,7 +1494,10 @@
               "class_name": "Priest",
               "role": "Healer",
               "consumables": {
-                "Mana": 17
+                "Mana": 17,
+                "Scroll: Spirit Uptime %": 52.6,
+                "Elixir Uptime %": 70.2,
+                "Well Fed Uptime %": 70.2
               }
             },
             {
@@ -1110,7 +1507,12 @@
               "consumables": {
                 "Mana": 16,
                 "Demonic Rune/Dark Rune": 3,
+<<<<<<< Updated upstream
                 "Scrolls": 1
+=======
+                "Elixir Uptime %": 73.3,
+                "Well Fed Uptime %": 92.3
+>>>>>>> Stashed changes
               }
             },
             {
@@ -1119,7 +1521,9 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 2,
-                "Haste": 4
+                "Haste": 4,
+                "Elixir Uptime %": 124.6,
+                "Well Fed Uptime %": 77.9
               }
             },
             {
@@ -1130,7 +1534,11 @@
                 "Sapper/Nades": 5,
                 "Haste": 4,
                 "Ironshield Potion": 1,
-                "Mana": 1
+                "Mana": 1,
+                "Scroll: Strength Uptime %": 76.7,
+                "Scroll: Agility Uptime %": 76.7,
+                "Elixir Uptime %": 101.2,
+                "Well Fed Uptime %": 76.7
               }
             },
             {
@@ -1140,7 +1548,8 @@
               "consumables": {
                 "Drums": 14,
                 "Mana": 18,
-                "Demonic Rune/Dark Rune": 6
+                "Demonic Rune/Dark Rune": 6,
+                "Well Fed Uptime %": 72.1
               }
             },
             {
@@ -1148,7 +1557,9 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 10
+                "Destro": 10,
+                "Flask Uptime %": 77.9,
+                "Well Fed Uptime %": 95.8
               }
             },
             {
@@ -1161,7 +1572,10 @@
                 "Scrolls": 2,
                 "Destro": 4,
                 "Mana": 3,
-                "Living/Free Action Potion": 2
+                "Living/Free Action Potion": 2,
+                "Scroll: Protection Uptime %": 76.5,
+                "Elixir Uptime %": 70.3,
+                "Well Fed Uptime %": 77.1
               }
             },
             {
@@ -1171,7 +1585,13 @@
               "consumables": {
                 "Destro": 14,
                 "Mana": 6,
+<<<<<<< Updated upstream
                 "Scrolls": 1
+=======
+                "Scroll: Spirit Uptime %": 76.9,
+                "Flask Uptime %": 77.9,
+                "Well Fed Uptime %": 76.9
+>>>>>>> Stashed changes
               }
             },
             {
@@ -1182,7 +1602,13 @@
                 "Destro": 9,
                 "Demonic Rune/Dark Rune": 9,
                 "Mana": 5,
+<<<<<<< Updated upstream
                 "Scrolls": 2
+=======
+                "Scroll: Spirit Uptime %": 100.0,
+                "Flask Uptime %": 87.4,
+                "Well Fed Uptime %": 91.5
+>>>>>>> Stashed changes
               }
             },
             {
@@ -1193,7 +1619,12 @@
                 "Haste": 12,
                 "Sapper/Nades": 9,
                 "Demonic Rune/Dark Rune": 4,
-                "Mana": 2
+                "Mana": 2,
+                "Scroll: Strength Uptime %": 66.9,
+                "Scroll: Agility Uptime %": 66.9,
+                "Flask Uptime %": 77.9,
+                "Elixir Uptime %": 0.0,
+                "Well Fed Uptime %": 73.1
               }
             },
             {
@@ -1201,7 +1632,9 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 15
+                "Destro": 15,
+                "Flask Uptime %": 77.9,
+                "Well Fed Uptime %": 77.7
               }
             },
             {
@@ -1211,7 +1644,9 @@
               "consumables": {
                 "Destro": 12,
                 "Demonic Rune/Dark Rune": 11,
-                "Mana": 3
+                "Mana": 3,
+                "Flask Uptime %": 77.9,
+                "Well Fed Uptime %": 75.6
               }
             },
             {
@@ -1220,7 +1655,12 @@
               "role": "Physical DPS",
               "consumables": {
                 "Drums": 24,
-                "Haste": 8
+                "Haste": 8,
+                "Scroll: Strength Uptime %": 75.1,
+                "Scroll: Agility Uptime %": 75.1,
+                "Flask Uptime %": 77.9,
+                "Elixir Uptime %": 0.0,
+                "Well Fed Uptime %": 75.1
               }
             },
             {
@@ -1230,8 +1670,16 @@
               "consumables": {
                 "Sapper/Nades": 7,
                 "Haste": 13,
+<<<<<<< Updated upstream
                 "Scrolls": 3,
                 "Mana": 5
+=======
+                "Mana": 5,
+                "Scroll: Strength Uptime %": 61.8,
+                "Scroll: Agility Uptime %": 61.8,
+                "Flask Uptime %": 77.9,
+                "Well Fed Uptime %": 66.5
+>>>>>>> Stashed changes
               }
             },
             {
@@ -1240,7 +1688,12 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 16,
-                "Haste": 15
+                "Haste": 15,
+                "Scroll: Strength Uptime %": 58.0,
+                "Scroll: Agility Uptime %": 29.7,
+                "Flask Uptime %": 77.9,
+                "Elixir Uptime %": 20.3,
+                "Well Fed Uptime %": 78.3
               }
             },
             {
@@ -1251,7 +1704,10 @@
                 "Sapper/Nades": 2,
                 "Haste": 6,
                 "Flame Cap": 5,
-                "Mana": 5
+                "Mana": 5,
+                "Scroll: Agility Uptime %": 62.7,
+                "Elixir Uptime %": 71.8,
+                "Well Fed Uptime %": 71.8
               }
             },
             {
@@ -1259,7 +1715,9 @@
               "class_name": "Druid",
               "role": "Healer",
               "consumables": {
-                "Mana": 13
+                "Mana": 13,
+                "Elixir Uptime %": 77.9,
+                "Well Fed Uptime %": 77.9
               }
             }
           ]
@@ -1275,7 +1733,9 @@
               "consumables": {
                 "Destro": 14,
                 "Demonic Rune/Dark Rune": 6,
-                "Sapper/Nades": 13
+                "Sapper/Nades": 13,
+                "Flask Uptime %": 79.7,
+                "Well Fed Uptime %": 75.2
               }
             },
             {
@@ -1285,7 +1745,11 @@
               "consumables": {
                 "Drums": 12,
                 "Haste": 12,
-                "Mana": 10
+                "Mana": 10,
+                "Scroll: Strength Uptime %": 76.7,
+                "Scroll: Agility Uptime %": 76.7,
+                "Elixir Uptime %": 76.7,
+                "Well Fed Uptime %": 76.7
               }
             },
             {
@@ -1296,7 +1760,10 @@
                 "Destro": 16,
                 "Sapper/Nades": 4,
                 "Demonic Rune/Dark Rune": 4,
-                "Mana": 1
+                "Mana": 1,
+                "Scroll: Spirit Uptime %": 19.4,
+                "Flask Uptime %": 79.7,
+                "Well Fed Uptime %": 74.2
               }
             },
             {
@@ -1305,7 +1772,9 @@
               "role": "Caster DPS",
               "consumables": {
                 "Sapper/Nades": 8,
-                "Mana": 17
+                "Mana": 17,
+                "Elixir Uptime %": 151.5,
+                "Well Fed Uptime %": 86.7
               }
             },
             {
@@ -1315,7 +1784,11 @@
               "consumables": {
                 "Haste": 13,
                 "Flame Cap": 8,
-                "Sapper/Nades": 11
+                "Sapper/Nades": 11,
+                "Scroll: Strength Uptime %": 70.2,
+                "Scroll: Agility Uptime %": 70.2,
+                "Flask Uptime %": 79.7,
+                "Well Fed Uptime %": 96.3
               }
             },
             {
@@ -1323,7 +1796,9 @@
               "class_name": "Mage",
               "role": "Caster DPS",
               "consumables": {
-                "Mana": 16
+                "Mana": 16,
+                "Elixir Uptime %": 159.4,
+                "Well Fed Uptime %": 73.0
               }
             },
             {
@@ -1331,7 +1806,10 @@
               "class_name": "Priest",
               "role": "Healer",
               "consumables": {
-                "Mana": 19
+                "Mana": 19,
+                "Scroll: Spirit Uptime %": 56.2,
+                "Elixir Uptime %": 75.0,
+                "Well Fed Uptime %": 34.7
               }
             },
             {
@@ -1342,7 +1820,9 @@
                 "Drums": 17,
                 "Destro": 11,
                 "Demonic Rune/Dark Rune": 2,
-                "Mana": 2
+                "Mana": 2,
+                "Flask Uptime %": 79.7,
+                "Well Fed Uptime %": 79.5
               }
             },
             {
@@ -1351,7 +1831,8 @@
               "role": "Healer",
               "consumables": {
                 "Mana": 16,
-                "Demonic Rune/Dark Rune": 2
+                "Demonic Rune/Dark Rune": 2,
+                "Well Fed Uptime %": 104.1
               }
             },
             {
@@ -1360,7 +1841,9 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 3,
-                "Haste": 9
+                "Haste": 9,
+                "Elixir Uptime %": 159.4,
+                "Well Fed Uptime %": 79.7
               }
             },
             {
@@ -1370,7 +1853,11 @@
               "consumables": {
                 "Sapper/Nades": 8,
                 "Haste": 8,
-                "Ironshield Potion": 2
+                "Ironshield Potion": 2,
+                "Scroll: Strength Uptime %": 98.3,
+                "Scroll: Agility Uptime %": 98.3,
+                "Elixir Uptime %": 98.3,
+                "Well Fed Uptime %": 98.3
               }
             },
             {
@@ -1380,7 +1867,9 @@
               "consumables": {
                 "Drums": 14,
                 "Mana": 14,
-                "Demonic Rune/Dark Rune": 1
+                "Demonic Rune/Dark Rune": 1,
+                "Elixir Uptime %": 8.1,
+                "Well Fed Uptime %": 71.7
               }
             },
             {
@@ -1388,7 +1877,9 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 16
+                "Destro": 16,
+                "Flask Uptime %": 79.7,
+                "Well Fed Uptime %": 79.7
               }
             },
             {
@@ -1397,7 +1888,9 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 46,
-                "Haste": 16
+                "Haste": 16,
+                "Flask Uptime %": 79.7,
+                "Well Fed Uptime %": 100.0
               }
             },
             {
@@ -1409,7 +1902,13 @@
                 "Destro": 7,
                 "Ironshield Potion": 2,
                 "Mana": 2,
+<<<<<<< Updated upstream
                 "Scrolls": 2
+=======
+                "Scroll: Protection Uptime %": 96.7,
+                "Elixir Uptime %": 96.7,
+                "Well Fed Uptime %": 84.6
+>>>>>>> Stashed changes
               }
             },
             {
@@ -1419,7 +1918,10 @@
               "consumables": {
                 "Destro": 9,
                 "Demonic Rune/Dark Rune": 2,
-                "Mana": 5
+                "Mana": 5,
+                "Scroll: Spirit Uptime %": 17.2,
+                "Flask Uptime %": 79.7,
+                "Well Fed Uptime %": 86.1
               }
             },
             {
@@ -1429,7 +1931,12 @@
               "consumables": {
                 "Haste": 9,
                 "Sapper/Nades": 7,
-                "Demonic Rune/Dark Rune": 3
+                "Demonic Rune/Dark Rune": 3,
+                "Scroll: Strength Uptime %": 74.1,
+                "Scroll: Agility Uptime %": 74.1,
+                "Flask Uptime %": 70.4,
+                "Elixir Uptime %": 4.0,
+                "Well Fed Uptime %": 74.1
               }
             },
             {
@@ -1437,7 +1944,8 @@
               "class_name": "Warlock",
               "role": "Caster DPS",
               "consumables": {
-                "Destro": 15
+                "Destro": 15,
+                "Flask Uptime %": 79.7
               }
             },
             {
@@ -1446,7 +1954,11 @@
               "role": "Caster DPS",
               "consumables": {
                 "Destro": 2,
-                "Mana": 13
+                "Mana": 13,
+                "Scroll: Spirit Uptime %": 9.0,
+                "Flask Uptime %": 75.7,
+                "Elixir Uptime %": 8.1,
+                "Well Fed Uptime %": 41.3
               }
             },
             {
@@ -1456,7 +1968,9 @@
               "consumables": {
                 "Destro": 14,
                 "Demonic Rune/Dark Rune": 9,
-                "Mana": 2
+                "Mana": 2,
+                "Flask Uptime %": 79.7,
+                "Well Fed Uptime %": 75.7
               }
             },
             {
@@ -1466,7 +1980,14 @@
               "consumables": {
                 "Drums": 24,
                 "Haste": 11,
+<<<<<<< Updated upstream
                 "Scrolls": 4
+=======
+                "Scroll: Strength Uptime %": 63.3,
+                "Scroll: Agility Uptime %": 63.3,
+                "Flask Uptime %": 79.7,
+                "Well Fed Uptime %": 78.2
+>>>>>>> Stashed changes
               }
             },
             {
@@ -1476,7 +1997,11 @@
               "consumables": {
                 "Haste": 10,
                 "Sapper/Nades": 7,
-                "Mana": 3
+                "Mana": 3,
+                "Scroll: Strength Uptime %": 73.4,
+                "Scroll: Agility Uptime %": 73.4,
+                "Flask Uptime %": 75.7,
+                "Well Fed Uptime %": 70.0
               }
             },
             {
@@ -1485,7 +2010,11 @@
               "role": "Physical DPS",
               "consumables": {
                 "Sapper/Nades": 19,
-                "Haste": 14
+                "Haste": 14,
+                "Scroll: Strength Uptime %": 74.8,
+                "Scroll: Agility Uptime %": 24.2,
+                "Flask Uptime %": 74.9,
+                "Well Fed Uptime %": 94.5
               }
             },
             {
@@ -1497,7 +2026,10 @@
                 "Scrolls": 3,
                 "Haste": 13,
                 "Flame Cap": 4,
-                "Mana": 4
+                "Mana": 4,
+                "Scroll: Agility Uptime %": 69.2,
+                "Elixir Uptime %": 75.4,
+                "Well Fed Uptime %": 75.4
               }
             },
             {
@@ -1505,7 +2037,9 @@
               "class_name": "Druid",
               "role": "Healer",
               "consumables": {
-                "Mana": 12
+                "Mana": 12,
+                "Elixir Uptime %": 66.9,
+                "Well Fed Uptime %": 66.9
               }
             }
           ]
@@ -1560,7 +2094,13 @@
             "consumables_avg": {
               "Mana": 11.8,
               "Drums": 9.0,
+<<<<<<< Updated upstream
               "Scrolls": 1.2
+=======
+              "Elixir Uptime %": 99.6,
+              "Well Fed Uptime %": 80.8,
+              "Scroll: Spirit Uptime %": 56.5
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1571,7 +2111,10 @@
             "consumables_avg": {
               "Sapper/Nades": 24.4,
               "Destro": 15.2,
-              "Demonic Rune/Dark Rune": 5.4
+              "Demonic Rune/Dark Rune": 5.4,
+              "Flask Uptime %": 77.5,
+              "Well Fed Uptime %": 70.9,
+              "Scroll: Spirit Uptime %": 5.1
             }
           },
           {
@@ -1582,7 +2125,10 @@
             "consumables_avg": {
               "Sapper/Nades": 27.0,
               "Haste": 7.5,
-              "Living/Free Action Potion": 1.0
+              "Living/Free Action Potion": 1.0,
+              "Flask Uptime %": 79.0,
+              "Well Fed Uptime %": 80.5,
+              "Elixir Uptime %": 0.0
             }
           },
           {
@@ -1592,7 +2138,9 @@
             "logs_attended": 1,
             "consumables_avg": {
               "Drums": 16.0,
-              "Mana": 8.0
+              "Mana": 8.0,
+              "Elixir Uptime %": 31.8,
+              "Well Fed Uptime %": 55.1
             }
           },
           {
@@ -1604,7 +2152,14 @@
               "Haste": 8.7,
               "Mana": 10.5,
               "Drums": 4.5,
+<<<<<<< Updated upstream
               "Scrolls": 0.3
+=======
+              "Scroll: Agility Uptime %": 68.8,
+              "Elixir Uptime %": 79.1,
+              "Well Fed Uptime %": 79.1,
+              "Scroll: Strength Uptime %": 27.4
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1616,7 +2171,10 @@
               "Destro": 17.0,
               "Demonic Rune/Dark Rune": 5.7,
               "Mana": 1.7,
-              "Sapper/Nades": 4.5
+              "Sapper/Nades": 4.5,
+              "Scroll: Spirit Uptime %": 51.9,
+              "Flask Uptime %": 78.0,
+              "Well Fed Uptime %": 76.8
             }
           },
           {
@@ -1629,7 +2187,11 @@
               "Scrolls": 1.0,
               "Haste": 9.0,
               "Mana": 7.0,
-              "Demonic Rune/Dark Rune": 8.0
+              "Demonic Rune/Dark Rune": 8.0,
+              "Scroll: Strength Uptime %": 57.6,
+              "Scroll: Agility Uptime %": 68.8,
+              "Elixir Uptime %": 71.9,
+              "Well Fed Uptime %": 71.9
             }
           },
           {
@@ -1639,6 +2201,9 @@
             "logs_attended": 2,
             "consumables_avg": {
               "Mana": 15.5,
+              "Scroll: Spirit Uptime %": 46.0,
+              "Elixir Uptime %": 167.7,
+              "Well Fed Uptime %": 89.3,
               "Sapper/Nades": 4.0
             }
           },
@@ -1651,6 +2216,10 @@
               "Sapper/Nades": 16.3,
               "Scrolls": 0.8,
               "Haste": 14.2,
+              "Scroll: Strength Uptime %": 63.3,
+              "Scroll: Agility Uptime %": 63.3,
+              "Flask Uptime %": 78.0,
+              "Well Fed Uptime %": 87.3,
               "Flame Cap": 2.5
             }
           },
@@ -1661,7 +2230,13 @@
             "logs_attended": 6,
             "consumables_avg": {
               "Mana": 15.8,
+<<<<<<< Updated upstream
               "Scrolls": 0.2
+=======
+              "Scroll: Spirit Uptime %": 22.8,
+              "Elixir Uptime %": 159.4,
+              "Well Fed Uptime %": 76.3
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1670,7 +2245,10 @@
             "role": "Healer",
             "logs_attended": 4,
             "consumables_avg": {
-              "Mana": 15.0
+              "Mana": 15.0,
+              "Scroll: Spirit Uptime %": 42.6,
+              "Elixir Uptime %": 75.0,
+              "Well Fed Uptime %": 60.2
             }
           },
           {
@@ -1682,7 +2260,9 @@
               "Destro": 10.0,
               "Drums": 16.5,
               "Demonic Rune/Dark Rune": 3.0,
-              "Mana": 3.0
+              "Mana": 3.0,
+              "Flask Uptime %": 77.5,
+              "Well Fed Uptime %": 78.9
             }
           },
           {
@@ -1692,9 +2272,17 @@
             "logs_attended": 5,
             "consumables_avg": {
               "Mana": 12.4,
+<<<<<<< Updated upstream
               "Scrolls": 0.8,
+=======
+              "Well Fed Uptime %": 87.7,
+              "Elixir Uptime %": 19.1,
+>>>>>>> Stashed changes
               "Haste": 2.2,
-              "Demonic Rune/Dark Rune": 1.4
+              "Demonic Rune/Dark Rune": 1.4,
+              "Scroll: Strength Uptime %": 15.5,
+              "Scroll: Agility Uptime %": 15.5,
+              "Flask Uptime %": 15.7
             }
           },
           {
@@ -1705,6 +2293,10 @@
             "consumables_avg": {
               "Haste": 4.4,
               "Sapper/Nades": 2.8,
+              "Scroll: Strength Uptime %": 25.5,
+              "Scroll: Agility Uptime %": 25.5,
+              "Elixir Uptime %": 113.9,
+              "Well Fed Uptime %": 83.1,
               "Mana": 0.2
             }
           },
@@ -1719,7 +2311,12 @@
               "Drums": 15.3,
               "Haste": 12.0,
               "Mana": 1.3,
-              "Demonic Rune/Dark Rune": 0.3
+              "Scroll: Strength Uptime %": 34.7,
+              "Scroll: Agility Uptime %": 37.9,
+              "Flask Uptime %": 73.4,
+              "Well Fed Uptime %": 77.2,
+              "Demonic Rune/Dark Rune": 0.3,
+              "Elixir Uptime %": 7.7
             }
           },
           {
@@ -1731,6 +2328,10 @@
               "Sapper/Nades": 5.7,
               "Haste": 5.3,
               "Ironshield Potion": 1.3,
+              "Scroll: Strength Uptime %": 83.5,
+              "Scroll: Agility Uptime %": 83.5,
+              "Elixir Uptime %": 116.9,
+              "Well Fed Uptime %": 83.5,
               "Mana": 0.3
             }
           },
@@ -1742,7 +2343,10 @@
             "consumables_avg": {
               "Drums": 13.2,
               "Mana": 15.2,
-              "Demonic Rune/Dark Rune": 3.4
+              "Demonic Rune/Dark Rune": 3.4,
+              "Well Fed Uptime %": 75.6,
+              "Scroll: Spirit Uptime %": 13.0,
+              "Elixir Uptime %": 16.3
             }
           },
           {
@@ -1751,6 +2355,8 @@
             "role": "Caster DPS",
             "logs_attended": 4,
             "consumables_avg": {
+              "Flask Uptime %": 76.9,
+              "Well Fed Uptime %": 83.2,
               "Destro": 10.2
             }
           },
@@ -1762,7 +2368,15 @@
             "consumables_avg": {
               "Sapper/Nades": 22.6,
               "Haste": 14.6,
+<<<<<<< Updated upstream
               "Scrolls": 0.4
+=======
+              "Scroll: Strength Uptime %": 9.9,
+              "Scroll: Agility Uptime %": 15.0,
+              "Flask Uptime %": 76.8,
+              "Elixir Uptime %": 15.5,
+              "Well Fed Uptime %": 81.4
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1774,6 +2388,9 @@
               "Sapper/Nades": 21.7,
               "Destro": 6.3,
               "Ironshield Potion": 5.8,
+              "Scroll: Protection Uptime %": 71.6,
+              "Elixir Uptime %": 77.6,
+              "Well Fed Uptime %": 73.8,
               "Mana": 1.8,
               "Scrolls": 1.2,
               "Living/Free Action Potion": 0.3
@@ -1786,7 +2403,13 @@
             "logs_attended": 4,
             "consumables_avg": {
               "Mana": 14.8,
+<<<<<<< Updated upstream
               "Scrolls": 0.8,
+=======
+              "Scroll: Spirit Uptime %": 76.9,
+              "Flask Uptime %": 79.2,
+              "Well Fed Uptime %": 75.7,
+>>>>>>> Stashed changes
               "Demonic Rune/Dark Rune": 0.5,
               "Destro": 3.5
             }
@@ -1800,7 +2423,13 @@
               "Destro": 10.0,
               "Mana": 4.0,
               "Demonic Rune/Dark Rune": 4.3,
+<<<<<<< Updated upstream
               "Scrolls": 0.7
+=======
+              "Flask Uptime %": 81.8,
+              "Well Fed Uptime %": 77.9,
+              "Scroll: Spirit Uptime %": 39.1
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1813,7 +2442,15 @@
               "Sapper/Nades": 9.4,
               "Demonic Rune/Dark Rune": 3.2,
               "Mana": 0.8,
+<<<<<<< Updated upstream
               "Scrolls": 0.2
+=======
+              "Scroll: Strength Uptime %": 61.9,
+              "Scroll: Agility Uptime %": 61.9,
+              "Elixir Uptime %": 49.1,
+              "Well Fed Uptime %": 76.4,
+              "Flask Uptime %": 29.7
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1823,7 +2460,11 @@
             "logs_attended": 1,
             "consumables_avg": {
               "Drums": 6.0,
-              "Haste": 15.0
+              "Haste": 15.0,
+              "Scroll: Strength Uptime %": 65.4,
+              "Scroll: Agility Uptime %": 65.4,
+              "Flask Uptime %": 78.3,
+              "Well Fed Uptime %": 65.4
             }
           },
           {
@@ -1833,7 +2474,10 @@
             "logs_attended": 2,
             "consumables_avg": {
               "Drums": 10.5,
-              "Mana": 15.0
+              "Mana": 15.0,
+              "Elixir Uptime %": 78.7,
+              "Well Fed Uptime %": 78.7,
+              "Scroll: Spirit Uptime %": 37.7
             }
           },
           {
@@ -1842,7 +2486,10 @@
             "role": "Caster DPS",
             "logs_attended": 6,
             "consumables_avg": {
-              "Destro": 13.5
+              "Destro": 13.5,
+              "Flask Uptime %": 74.0,
+              "Well Fed Uptime %": 59.4,
+              "Elixir Uptime %": 2.1
             }
           },
           {
@@ -1853,7 +2500,14 @@
             "consumables_avg": {
               "Mana": 11.0,
               "Destro": 5.8,
+<<<<<<< Updated upstream
               "Scrolls": 0.8
+=======
+              "Scroll: Spirit Uptime %": 48.4,
+              "Elixir Uptime %": 60.5,
+              "Well Fed Uptime %": 62.0,
+              "Flask Uptime %": 23.6
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1864,7 +2518,9 @@
             "consumables_avg": {
               "Destro": 14.8,
               "Demonic Rune/Dark Rune": 10.8,
-              "Mana": 1.8
+              "Mana": 1.8,
+              "Flask Uptime %": 78.0,
+              "Well Fed Uptime %": 74.9
             }
           },
           {
@@ -1873,7 +2529,9 @@
             "role": "Healer",
             "logs_attended": 2,
             "consumables_avg": {
-              "Mana": 12.0
+              "Mana": 12.0,
+              "Elixir Uptime %": 55.5,
+              "Well Fed Uptime %": 55.8
             }
           },
           {
@@ -1882,7 +2540,9 @@
             "role": "Caster DPS",
             "logs_attended": 2,
             "consumables_avg": {
-              "Destro": 13.5
+              "Destro": 13.5,
+              "Flask Uptime %": 80.2,
+              "Well Fed Uptime %": 67.5
             }
           },
           {
@@ -1893,7 +2553,15 @@
             "consumables_avg": {
               "Drums": 23.0,
               "Haste": 8.8,
+<<<<<<< Updated upstream
               "Scrolls": 2.2
+=======
+              "Scroll: Strength Uptime %": 57.9,
+              "Scroll: Agility Uptime %": 59.1,
+              "Flask Uptime %": 78.0,
+              "Well Fed Uptime %": 73.3,
+              "Elixir Uptime %": 0.0
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1904,8 +2572,16 @@
             "consumables_avg": {
               "Sapper/Nades": 7.0,
               "Haste": 11.5,
+<<<<<<< Updated upstream
               "Scrolls": 1.5,
               "Mana": 4.0
+=======
+              "Mana": 4.0,
+              "Scroll: Strength Uptime %": 67.6,
+              "Scroll: Agility Uptime %": 67.6,
+              "Flask Uptime %": 76.8,
+              "Well Fed Uptime %": 68.2
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1916,8 +2592,17 @@
             "consumables_avg": {
               "Sapper/Nades": 23.7,
               "Haste": 14.3,
+<<<<<<< Updated upstream
               "Scrolls": 0.5,
               "Flame Cap": 0.5
+=======
+              "Scroll: Strength Uptime %": 63.9,
+              "Scroll: Agility Uptime %": 21.5,
+              "Flask Uptime %": 77.1,
+              "Well Fed Uptime %": 75.8,
+              "Flame Cap": 0.5,
+              "Elixir Uptime %": 3.4
+>>>>>>> Stashed changes
             }
           },
           {
@@ -1928,6 +2613,9 @@
             "consumables_avg": {
               "Haste": 11.8,
               "Mana": 4.3,
+              "Scroll: Agility Uptime %": 66.1,
+              "Elixir Uptime %": 77.4,
+              "Well Fed Uptime %": 76.2,
               "Sapper/Nades": 2.3,
               "Scrolls": 0.8,
               "Flame Cap": 1.5
@@ -1939,7 +2627,9 @@
             "role": "Healer",
             "logs_attended": 6,
             "consumables_avg": {
-              "Mana": 10.3
+              "Mana": 10.3,
+              "Well Fed Uptime %": 74.3,
+              "Elixir Uptime %": 61.0
             }
           }
         ]

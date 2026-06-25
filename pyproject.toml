@@ -5,12 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "log-analyzer"
 version = "0.1.0"
-description = "WoW TBC Classic Warcraft Logs analyzer: per-player overall performance + consumable usage, exported to Excel."
+description = "WoW TBC Classic Warcraft Logs analyzer: per-player overall performance + consumable usage, exported to a static web UI."
 requires-python = ">=3.10"
 dependencies = [
     "requests>=2.31",
     "python-dotenv>=1.0",
-    "openpyxl>=3.1",
 ]
 
 [project.optional-dependencies]

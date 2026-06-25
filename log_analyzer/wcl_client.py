@@ -138,6 +138,21 @@ class WCLClient:
             params["end"] = end
         return self._get(f"/report/tables/{view}/{code}", **params)
 
+    def get_buff_uptime(self, code: str, start: int, end: int, ability_id: int) -> list[dict]:
+        """GET /report/tables/buffs/{code}?start=&end=&abilityid=<id> -> per-
+        player uptime ("auras" list) for one specific buff ability.
+
+        Confirmed live: passing a *single* ability id switches the response
+        from a guild-wide aggregate (one entry per buff seen, "id"/"name"
+        meaning the ability) to a per-player breakdown (one entry per
+        player who had it, "id"/"name" now meaning the player, "totalUptime"
+        in ms, same scale as fights[].start_time/end_time). A comma-joined
+        list of ids does NOT filter — it silently falls back to the
+        unfiltered aggregate — so callers needing several ids (e.g. several
+        ranks of the same scroll) must call this once per id and sum.
+        """
+        return self._get(f"/report/tables/buffs/{code}", start=start, end=end, abilityid=ability_id).get("auras", [])
+
     def get_events(self, code: str, start: int, end: int, **params: Any) -> Iterator[dict]:
         """GET /report/events/{code}?start=&end=&filter=..., paginated.
 

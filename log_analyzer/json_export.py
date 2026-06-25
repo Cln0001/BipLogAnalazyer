@@ -1,8 +1,7 @@
 """Writes per-log + aggregated "Summary" data into one JSON file for the
-static web UI (docs/), mirroring excel_export.py's accumulation model
-(upsert by sheet_name, recompute the Summary block from everything in the
-file) but without any sheet/round-trip parsing — the JSON itself is the
-durable per-log store, so accumulation is just dict upsert + recompute.
+static web UI (docs/) — the JSON itself is the durable per-log store, kept
+up to date by dict upsert (by sheet_name) + recomputing the "Summary" block
+from everything currently in the file, on every run.
 
 Logs/summary are bucketed under a "phase" key (e.g. "2") so the UI can
 switch between raid phases — each phase has its own independent log list
@@ -25,7 +24,7 @@ from log_analyzer.analyze import (
     ROLE_UNKNOWN,
     PlayerSummary,
 )
-from log_analyzer.excel_export import _CATEGORY_FILL, _CATEGORY_ORDER, _category_for
+from log_analyzer.consumables import CATEGORY_FILL, CATEGORY_ORDER, category_for
 
 ROLE_ORDER = [ROLE_TANK, ROLE_HEALER, ROLE_CASTER_DPS, ROLE_PHYSICAL_DPS, ROLE_UNKNOWN]
 
@@ -40,8 +39,8 @@ def _skeleton() -> dict:
         "version": 2,
         "generated_at": None,
         "role_order": ROLE_ORDER,
-        "category_order": _CATEGORY_ORDER,
-        "category_colors": _CATEGORY_FILL,
+        "category_order": CATEGORY_ORDER,
+        "category_colors": CATEGORY_FILL,
         "consumable_categories": {},
         "phase_order": [],
         "phases": {},
@@ -54,11 +53,10 @@ def _empty_phase() -> dict:
 
 def _categories_for_names(names: set[str]) -> dict[str, str]:
     """Consumable display name -> section category (Potions/Others/
-    Explosives/Buffs-Items/Other), same mapping excel_export.py uses to
-    group consumable rows into sheet sections — computed once here so the
-    frontend doesn't need to duplicate consumables.json's category rules.
+    Explosives/Buffs-Items/Other) — computed once here so the frontend
+    doesn't need to duplicate consumables.json's category rules.
     """
-    return {name: _category_for(name) for name in names}
+    return {name: category_for(name) for name in names}
 
 
 def _load(output_path: str) -> dict:
@@ -74,8 +72,7 @@ def _phase_sort_key(phase: str):
 
 
 def _summary_from_logs(logs: dict[str, dict]) -> dict:
-    """Same algorithm as excel_export._recompute_total_sheet: per player,
-    average consumable count across the logs they attended (not a raw sum)
+    """Per player, average consumable count across the logs they attended (not a raw sum)
     plus a "Logs Attended" count, computed here in Python so the frontend
     does zero aggregation math. A player's role on the Summary is whichever
     role they played most often across their attended logs (ties broken by
@@ -136,9 +133,8 @@ def _summary_from_logs(logs: dict[str, dict]) -> dict:
 
 
 def _players_signature(players: list[dict]) -> set[tuple]:
-    """Drop zero-count entries before comparing, mirroring
-    excel_export._summary_signature — only the nonzero consumables matter
-    for deciding "unchanged" vs "corrected".
+    """Drop zero-count entries before comparing — only the nonzero
+    consumables matter for deciding "unchanged" vs "corrected".
     """
     return {
         (p["name"], p["class_name"], p["role"], tuple(sorted((k, v) for k, v in p["consumables"].items() if v)))
@@ -178,8 +174,8 @@ def write_report(
 
     data["phase_order"] = sorted(data["phases"], key=_phase_sort_key)
     data["role_order"] = ROLE_ORDER
-    data["category_order"] = _CATEGORY_ORDER
-    data["category_colors"] = _CATEGORY_FILL
+    data["category_order"] = CATEGORY_ORDER
+    data["category_colors"] = CATEGORY_FILL
 
     all_names: set[str] = set()
     for phase_entry in data["phases"].values():

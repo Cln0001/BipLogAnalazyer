@@ -287,15 +287,79 @@ def count_consumable_casts(
     return counts
 
 
+def is_encounter_fight(fight: dict) -> bool:
+    """True for a real boss pull (kill or wipe), false for trash — `boss` is
+    a nonzero encounter id on a boss fight, 0/absent on trash. Used to scope
+    buff-uptime metrics to actual encounter time, excluding the (often
+    substantial — roughly half a raid night) trash/travel/repair time
+    between pulls that `phase_fight_windows`' merged window otherwise
+    includes.
+    """
+    return bool(fight.get("boss"))
+
+
+def _band_overlap_ms(band: dict, intervals: list[tuple[int, int]]) -> int:
+    return sum(
+        max(0, min(band["endTime"], end) - max(band["startTime"], start))
+        for start, end in intervals
+    )
+
+
+def aggregate_buff_uptime_ms(
+    auras_lists: list[list[dict]],
+    player_index: dict[int, PlayerInfo],
+    intervals: list[tuple[int, int]] | None = None,
+) -> dict[int, int]:
+    """Sums buff uptime (ms) per player across one or more single-ability
+    `/report/tables/buffs` responses (see `WCLClient.get_buff_uptime`) — one
+    list per (window, spell id) pair so several ranks of the same named
+    consumable (e.g. every Scroll of Strength rank) land in one total per
+    player.
+
+    Without `intervals`, sums each entry's `totalUptime` as reported for the
+    queried window. With `intervals` (e.g. a report's encounter-fight
+    start/end pairs from `is_encounter_fight`), sums only the portion of each
+    `bands` entry that overlaps those intervals instead — lets the uptime
+    query itself span a whole merged window (cheap, one call per spell id)
+    while still scoping the result to just encounter time, not trash/travel
+    time in between.
+
+    Doesn't union overlapping time ranges across different ids/intervals, so
+    a player somehow holding two ranks of the same scroll simultaneously
+    would be double-counted — disregarded as a practically-never case.
+    """
+    totals: dict[int, int] = {}
+    for auras in auras_lists:
+        for entry in auras:
+            player_id = _entry_player_id(entry, player_index)
+            if player_id is None:
+                continue
+            if intervals is None:
+                ms = entry.get("totalUptime", 0)
+            else:
+                ms = sum(_band_overlap_ms(band, intervals) for band in entry.get("bands", []))
+            totals[player_id] = totals.get(player_id, 0) + ms
+    return totals
+
+
 def merge_player_summary(
     player_index: dict[int, PlayerInfo],
     consumable_counts: dict[int, dict[int, int]],
     consumable_lookup: dict[int, ConsumableInfo],
     role_lookup: dict[int, str],
+    extra_metrics: dict[int, dict[str, float]] | None = None,
 ) -> list[PlayerSummary]:
     """Combines player identity, role, and consumable tallies into the
     final per-player summary list (sorted by name).
+
+    `extra_metrics` (player_id -> {row_label: value}) are merged into each
+    player's `consumables` dict alongside the spell-id-derived counts — used
+    for derived metrics with no spell id of their own (e.g. "Scrolls Uptime
+    %", from `aggregate_buff_uptime_ms`), so excel_export.py/json_export.py
+    don't need any special-casing: they already treat every key in
+    `consumables` generically.
     """
+    extra_metrics = extra_metrics or {}
     summaries: list[PlayerSummary] = []
 
     for player_id, info in player_index.items():
@@ -309,6 +373,8 @@ def merge_player_summary(
             if consumable_info is None:
                 continue
             consumables[consumable_info.name] = consumables.get(consumable_info.name, 0) + count
+
+        consumables.update(extra_metrics.get(player_id, {}))
 
         summaries.append(
             PlayerSummary(
