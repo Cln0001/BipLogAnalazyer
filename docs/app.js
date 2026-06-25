@@ -33,8 +33,8 @@ const PHASE_LABELS = {
 };
 
 const ROLE_EXCLUDE = {
-  "Healer": new Set(["Living/Free Action Potion"]),
-  "Caster DPS": new Set(["Living/Free Action Potion"]),
+  "Healer": new Set(["Living/Free Action Potion", "Scroll: Strength Uptime %", "Scroll: Agility Uptime %"]),
+  "Caster DPS": new Set(["Living/Free Action Potion", "Scroll: Strength Uptime %", "Scroll: Agility Uptime %"]),
   "Physical DPS": new Set(["Ironshield Potion"]),
 };
 
